@@ -1,0 +1,65 @@
+#section1 {
+  width: 100%;
+  .box {
+    display: flex;
+    justify-content: center;
+    gap: 4%;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-top: 60px;
+
+    @media only screen and (max-width: 992px) {
+      flex-direction: column-reverse;
+      padding-top: 30px;
+    }
+    .image {
+      background-image: url("../../assets//images//backGroundImage.jpg");
+      width: 40%;
+      height: 500px;
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: cover;
+      border-radius: 50%;
+
+      @media only screen and (max-width: 992px) {
+        width: 94%;
+        border-radius: 0;
+      }
+    }
+
+    .leftAboutText {
+      width: 32%;
+      h1 {
+        font-weight: 900;
+        font-size: 25px;
+        background: linear-gradient(
+          to right,
+          #6441a5 20%,
+          #ba8b02 40%,
+          #4b79a1 60%,
+          #6a9113 80%
+        );
+        background-size: 200% auto;
+        color: #000;
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        animation: shine 4s linear infinite;
+        @keyframes shine {
+          to {
+            background-position: 200% center;
+          }
+        }
+      }
+      @media only screen and (max-width: 992px) {
+        width: 94%;
+        padding-top: 30px;
+
+        h1 {
+          font-size: 24px;
+        }
+      }
+    }
+  }
+}

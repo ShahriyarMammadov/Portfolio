@@ -12,5 +12,5 @@ npm run dev
 
 ## Used technologies:
 
-- Frontend: React Js -> SCSS, Chakra UI, AOS animation
+- Frontend: React Js -> SCSS, Chakra UI, AOS animation, EmailJS
 - Git: GitHub

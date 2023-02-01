@@ -58,7 +58,7 @@ const HomePage = () => {
         <div
           className="aboutText"
           data-aos="fade-up-right"
-          data-aos-offset="10"
+          data-aos-offset="100"
           data-aos-delay="50"
           data-aos-duration="1000"
           data-aos-easing="ease-in"
@@ -78,7 +78,7 @@ const HomePage = () => {
             className="skills"
             data-aos="fade-up"
             data-aos-anchor-placement="bottom-bottom"
-            data-aos-offset="10"
+            data-aos-offset="115"
             data-aos-delay="50"
             data-aos-duration="1000"
             data-aos-easing="ease-in"
@@ -97,7 +97,7 @@ const HomePage = () => {
         id="section3"
         data-aos="fade-up"
         data-aos-anchor-placement="bottom-bottom"
-        data-aos-offset="40"
+        data-aos-offset="120"
         data-aos-delay="50"
         data-aos-duration="1000"
         data-aos-easing="ease-in"
@@ -113,16 +113,19 @@ const HomePage = () => {
         id="contact"
         data-aos="fade-up"
         data-aos-anchor-placement="center-bottom"
-        data-aos-offset="150"
+        data-aos-offset="125"
         data-aos-delay="50"
         data-aos-duration="1000"
         data-aos-easing="ease-in"
       >
-        <div className="left">
-          <h1>Contact me:</h1>
+        <div className="headerText">
+          <h1>Contact Me</h1>
+          <div className="hr"></div>
         </div>
-        <div className="right">
-          <ContactComponent />
+        <div className="contact">
+          <div className="right">
+            <ContactComponent />
+          </div>
         </div>
       </section>
     </>

@@ -1,5 +1,11 @@
 .header {
   padding: 0 5% !important;
+  position: fixed;
+  background-color: #041c32;
+  left: 0;
+  right: 0;
+  z-index: 2;
+  top: 0;
   #header {
     display: flex;
     padding: 20px 0;
@@ -39,6 +45,7 @@
         font-size: 18px;
         margin-left: 25px;
         font-weight: 600;
+        color: white;
 
         &.active {
           color: goldenrod;
@@ -47,7 +54,7 @@
           transition: all 0.5s ease-in;
         }
       }
-      @media only screen and (max-width: 440px) {
+      @media only screen and (max-width: 510px) {
         display: none;
       }
     }
@@ -55,8 +62,9 @@
     .fa-bars {
       display: none;
       font-size: 24px;
+      color: white;
       cursor: pointer;
-      @media only screen and (max-width: 440px) {
+      @media only screen and (max-width: 510px) {
         display: block;
       }
     }

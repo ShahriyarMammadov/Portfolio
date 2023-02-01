@@ -24,9 +24,9 @@ const Header = () => {
         </div>
         <nav>
           <NavLink to={"/"}>Home</NavLink>
-          <NavLink to={"/about"}>About</NavLink>
-          <NavLink to={"/Projects"}>Projects</NavLink>
-          <NavLink to={"/Contact"}>Contact</NavLink>
+          <a href="#section2">About</a>
+          <a href={"#section3"}>Projects</a>
+          <a href={"#contact"}>Contact</a>
         </nav>
         <i className="fa-solid fa-bars" onClick={onOpen}></i>
       </div>
@@ -41,15 +41,15 @@ const Header = () => {
               <NavLink to={"/"} className="home">
                 Home <i className="fa-solid fa-arrow-right"></i>
               </NavLink>
-              <NavLink to={"/about"} className="home">
+              <a href={"#section2"} className="home">
                 About <i className="fa-solid fa-arrow-right"></i>
-              </NavLink>
-              <NavLink to={"/Projects"}>
+              </a>
+              <a href={"#section3"}>
                 Projects <i className="fa-solid fa-arrow-right"></i>
-              </NavLink>
-              <NavLink to={"/Contact"}>
+              </a>
+              <a href={"#contact"}>
                 Contact <i className="fa-solid fa-arrow-right"></i>
-              </NavLink>
+              </a>
             </DrawerBody>
           </DrawerContent>
         </Drawer>

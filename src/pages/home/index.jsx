@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import "./index.scss";
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -7,9 +7,21 @@ import ProjectCards from "../../assets/components/projectCards";
 import ContactComponent from "../../assets/components/contact";
 
 const HomePage = () => {
+  const [isMobile, setIsMobile] = useState(false);
   useEffect(() => {
-    AOS.init();
+    AOS.init({
+      disable: isMobile,
+    });
     AOS.refresh();
+  }, [isMobile]);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth < 768);
+    };
+    handleResize();
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
   }, []);
 
   return (
@@ -23,7 +35,7 @@ const HomePage = () => {
             data-aos-delay="50"
             data-aos-duration="1000"
             data-aos-easing="ease-in-out"
-            data-aos-once="false"
+            data-aos-once="true"
           >
             <h1>Hi, I am Shahriyar Mammadov, I am a Front-end Developer.</h1>
           </div>
@@ -36,7 +48,7 @@ const HomePage = () => {
             data-aos-duration="1000"
             data-aos-easing="ease-in-out"
             data-aos-mirror="true"
-            data-aos-once="false"
+            data-aos-once="true"
             data-aos-anchor-placement="top-center"
           ></div>
         </div>
@@ -50,6 +62,7 @@ const HomePage = () => {
           data-aos-delay="50"
           data-aos-duration="1000"
           data-aos-easing="ease-in"
+          data-aos-once="true"
         >
           <h1>About</h1>
           <div className="hr"></div>
@@ -62,14 +75,15 @@ const HomePage = () => {
           data-aos-delay="50"
           data-aos-duration="1000"
           data-aos-easing="ease-in"
+          data-aos-once="true"
         >
           <div className="text">
             <p>
               My name is Shahriyar Mammadov, I was born on 20.05.2002 in Baku, I
               have been studying Bachelor of Computer Science at Azerbaijan
               Technical University since 2020, in the same year I studied Full
-              Stack Web Developer in the <i>#codeforfuture</i> project organized
-              by Code Academy and graduated successfully..
+              Stack Web Development in the <i>#codeforfuture</i> project
+              organized by Code Academy and graduated successfully..
             </p>
             <img src="https://icons8.com/icon/jD-fJzVguBmw/redux" alt="" />
           </div>
@@ -82,6 +96,7 @@ const HomePage = () => {
             data-aos-delay="50"
             data-aos-duration="1000"
             data-aos-easing="ease-in"
+            data-aos-once="true"
           >
             <div className="headerText">
               <h1>My Skills</h1>
@@ -101,6 +116,7 @@ const HomePage = () => {
         data-aos-delay="50"
         data-aos-duration="1000"
         data-aos-easing="ease-in"
+        data-aos-once="true"
       >
         <div className="headerText">
           <h1>My Projects</h1>
@@ -117,6 +133,7 @@ const HomePage = () => {
         data-aos-delay="50"
         data-aos-duration="1000"
         data-aos-easing="ease-in"
+        data-aos-once="true"
       >
         <div className="headerText">
           <h1>Contact Me</h1>

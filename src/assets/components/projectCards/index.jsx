@@ -6,6 +6,7 @@ import shortly from "../../images/shortly.png";
 import universities from "../../images/universities.png";
 import country from "../../images/country.png";
 import github from "../../images/github.png";
+import magicBook from "../../images/magic.png";
 
 const ProjectCards = () => {
   return (
@@ -29,6 +30,19 @@ const ProjectCards = () => {
               </div>
               <div className="cardBody">
                 <h2>Movie Search and About App</h2>
+              </div>
+            </div>
+          </a>
+          <a
+            href="https://641c20f0300fcc005fde4e14--brilliant-truffle-d7799c.netlify.app/"
+            target={"_blank"}
+          >
+            <div className="card">
+              <div className="image">
+                <img src={magicBook} alt="" />
+              </div>
+              <div className="cardBody">
+                <h2>Magic Books</h2>
               </div>
             </div>
           </a>

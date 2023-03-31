@@ -5,6 +5,7 @@ import "aos/dist/aos.css";
 import Skills from "../../assets/components/skills";
 import ProjectCards from "../../assets/components/projectCards";
 import ContactComponent from "../../assets/components/contact";
+import CVURL from "../../assets/CV.pdf";
 
 const HomePage = () => {
   const [isMobile, setIsMobile] = useState(false);
@@ -82,13 +83,16 @@ const HomePage = () => {
               My name is Shahriyar Mammadov, I was born on 20.05.2002 in Baku, I
               have been studying Bachelor of Computer Science at Azerbaijan
               Technical University since 2020, in the same year I studied Full
-              Stack Web Development in the <i>#codeforfuture</i> project organized by
-              Code Academy and I graduated successfully (96/100). During my
-              studies, I learned HTML, CSS, javascript, React, Redux, next.js,
-              Figma, node.js, express.js, etc. I have acquired deep knowledge of
-              working with a team.
+              Stack Web Development in the <i>#codeforfuture</i> project
+              organized by Code Academy and I graduated successfully (96/100).
+              During my studies, I learned HTML, CSS, javascript, React, Redux,
+              next.js, Figma, node.js, express.js, etc. I have acquired deep
+              knowledge of working with a team.
             </p>
-            <img src="https://icons8.com/icon/jD-fJzVguBmw/redux" alt="" />
+
+            <a href={CVURL} download="Shahriyar Mammadov">
+              download CV
+            </a>
           </div>
 
           <div

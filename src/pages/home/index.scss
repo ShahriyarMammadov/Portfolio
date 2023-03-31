@@ -129,6 +129,16 @@
           font-weight: 600;
         }
       }
+      a {
+        display: inline-block;
+        margin-top: 20px;
+        font-weight: 900;
+        color: #ba8b02;
+
+        &:hover {
+          color: #4b79a1;
+        }
+      }
     }
   }
 }

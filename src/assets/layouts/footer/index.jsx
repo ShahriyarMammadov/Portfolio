@@ -17,7 +17,7 @@ const Footer = () => {
     <footer>
       <h3>{date}</h3>
       <h1>
-        Made By Shahriyar{" "}
+        Made By Shahriyar <br />
         <span>created at: {moment("20230201", "YYYYMMDD").fromNow()}</span>
       </h1>
     </footer>

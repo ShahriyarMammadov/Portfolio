@@ -16,11 +16,12 @@
       padding-top: 30px;
     }
     .image {
-      background-image: url("../../assets//images//backGroundImage.jpg");
+      background-image: url("../../assets//images/15.jpg");
       width: 40%;
       height: 500px;
       background-repeat: no-repeat;
-      background-position: center center;
+      background-position: left;
+      background-position: top;
       background-size: cover;
       border-radius: 50%;
 
@@ -103,12 +104,18 @@
 }
 
 #section2 {
-  padding: 20px;
+  padding: 40px;
+
+  .skills {
+    padding-top: 60px;
+  }
+
   .aboutText {
     max-width: 1200px;
     margin: 0 auto;
     .text {
-      p {
+      p,
+      i {
         &::selection {
           background-color: #ba8b02;
           color: #000;
@@ -128,6 +135,7 @@
 
 #section3 {
   padding: 40px 0;
+  padding-top: 150px;
 }
 
 #contact {

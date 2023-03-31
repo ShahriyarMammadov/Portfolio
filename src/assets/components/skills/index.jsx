@@ -10,20 +10,22 @@ import nodejs from "../../images/node-js.svg";
 import sass from "../../images/sass.svg";
 import expressjs from "../../images/express.svg";
 import figma from "../../images/figma.svg";
+import nextjs from "../../images/nextjs.png";
 
 const Skills = () => {
   return (
     <div className="skill">
-      <img src={html} alt="" />
-      <img src={css} alt="" />
-      <img src={js} alt="" />
-      <img src={sass} alt="" />
-      <img src={react} alt="" />
-      <img src={redux} alt="" />
-      <img src={nodejs} alt="" />
-      <img src={mongodb} alt="" />
-      <img src={expressjs} alt="" />
-      <img src={figma} alt="" />
+      <img src={html} alt="html" />
+      <img src={css} alt="css" />
+      <img src={js} alt="js" />
+      <img src={sass} alt="sass" />
+      <img src={react} alt="react" />
+      <img src={redux} alt="redux" />
+      <img src={nodejs} alt="nodejs" />
+      <img src={mongodb} alt="mongodb" />
+      <img src={expressjs} alt="expressjs" />
+      <img src={figma} alt="figma" />
+      <img src={nextjs} alt="nextjs" />
     </div>
   );
 };

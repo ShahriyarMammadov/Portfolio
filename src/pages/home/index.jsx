@@ -82,8 +82,11 @@ const HomePage = () => {
               My name is Shahriyar Mammadov, I was born on 20.05.2002 in Baku, I
               have been studying Bachelor of Computer Science at Azerbaijan
               Technical University since 2020, in the same year I studied Full
-              Stack Web Development in the <i>#codeforfuture</i> project
-              organized by Code Academy and graduated successfully..
+              Stack Web Development in the <i>#codeforfuture</i> project organized by
+              Code Academy and I graduated successfully (96/100). During my
+              studies, I learned HTML, CSS, javascript, React, Redux, next.js,
+              Figma, node.js, express.js, etc. I have acquired deep knowledge of
+              working with a team.
             </p>
             <img src="https://icons8.com/icon/jD-fJzVguBmw/redux" alt="" />
           </div>
@@ -98,7 +101,7 @@ const HomePage = () => {
             data-aos-easing="ease-in"
             data-aos-once="true"
           >
-            <div className="headerText">
+            <div className="headerText skills">
               <h1>My Skills</h1>
               <div className="hr"></div>
             </div>

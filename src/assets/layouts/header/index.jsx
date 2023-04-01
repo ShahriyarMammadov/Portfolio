@@ -19,6 +19,18 @@ const Header = () => {
   };
   const location = useLocation();
 
+  const handleShare = () => {
+    if (navigator.share) {
+      navigator.share({
+        title: "Shahriyar Mammadov",
+        text: "Shahriyar's Portfolio",
+        url: "https://dazzling-fenglisu-d9353d.netlify.app/",
+      });
+    } else {
+      alert("your browser don't support");
+    }
+  };
+
   return (
     <div className="header">
       <div id="header">
@@ -28,6 +40,10 @@ const Header = () => {
           </Link>
         </div>
         <nav>
+          <i
+            className="fa-solid fa-share-from-square"
+            onClick={handleShare}
+          ></i>
           <Link to={"/"} onClick={scrollTop}>
             Home
           </Link>

@@ -28,6 +28,7 @@ const Header = () => {
           </Link>
         </div>
         <nav>
+          <Link to={"/gamecenter"}>Game Center</Link>
           <Link to={"/"} onClick={scrollTop}>
             Home
           </Link>
@@ -60,6 +61,9 @@ const Header = () => {
               Shahriyar Mammadov
             </DrawerHeader>
             <DrawerBody>
+              <Link to={"/gamecenter"} onClick={onClose}>
+                Game Center <i className="fa-solid fa-arrow-right"></i>
+              </Link>
               <NavLink to={"/"} className="home" onClick={onClose}>
                 Home <i className="fa-solid fa-arrow-right"></i>
               </NavLink>

@@ -2,6 +2,11 @@
   width: 100%;
   padding-top: 100px;
   padding-bottom: 60px;
+
+  @media only screen and (max-width: 376px) {
+    padding-bottom: 0;
+  }
+
   .box {
     display: flex;
     justify-content: center;
@@ -33,7 +38,8 @@
 
     .leftAboutText {
       width: 32%;
-      h1 {
+      h1,
+      i {
         font-weight: 900;
         font-size: 25px;
         background: linear-gradient(
@@ -55,6 +61,12 @@
           }
         }
       }
+
+      i {
+        cursor: pointer;
+        margin-top: 10px;
+      }
+
       @media only screen and (max-width: 992px) {
         width: 94%;
         padding-top: 30px;
@@ -104,10 +116,14 @@
 }
 
 #section2 {
-  padding: 40px;
+  padding: 20px;
 
   .skills {
     padding-top: 60px;
+
+    @media only screen and (max-width: 376px) {
+      padding-top: 30px;
+    }
   }
 
   .aboutText {
@@ -146,6 +162,10 @@
 #section3 {
   padding: 40px 0;
   padding-top: 150px;
+
+  @media only screen and (max-width: 376px) {
+    padding-top: 40px;
+  }
 }
 
 #contact {

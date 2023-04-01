@@ -39,6 +39,10 @@ const HomePage = () => {
             data-aos-once="true"
           >
             <h1>Hi, I am Shahriyar Mammadov, I am a Front-end Developer.</h1>
+            <i
+              className="fa-solid fa-share-from-square"
+              // onClick={handleShare}
+            ></i>
           </div>
 
           <div

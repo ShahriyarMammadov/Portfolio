@@ -40,10 +40,6 @@ const Header = () => {
           </Link>
         </div>
         <nav>
-          <i
-            className="fa-solid fa-share-from-square"
-            onClick={handleShare}
-          ></i>
           <Link to={"/"} onClick={scrollTop}>
             Home
           </Link>

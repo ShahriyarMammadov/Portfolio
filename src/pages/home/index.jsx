@@ -25,6 +25,18 @@ const HomePage = () => {
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 
+  const handleShare = () => {
+    if (navigator.share) {
+      navigator.share({
+        title: "Shahriyar Mammadov",
+        text: "Shahriyar's Portfolio",
+        url: "https://dazzling-fenglisu-d9353d.netlify.app/",
+      });
+    } else {
+      alert("your browser don't support");
+    }
+  };
+
   return (
     <>
       <section id="section1">
@@ -41,7 +53,7 @@ const HomePage = () => {
             <h1>Hi, I am Shahriyar Mammadov, I am a Front-end Developer.</h1>
             <i
               className="fa-solid fa-share-from-square"
-              // onClick={handleShare}
+              onClick={handleShare}
             ></i>
           </div>
 

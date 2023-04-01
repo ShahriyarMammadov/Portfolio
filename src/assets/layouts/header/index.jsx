@@ -19,18 +19,6 @@ const Header = () => {
   };
   const location = useLocation();
 
-  const handleShare = () => {
-    if (navigator.share) {
-      navigator.share({
-        title: "Shahriyar Mammadov",
-        text: "Shahriyar's Portfolio",
-        url: "https://dazzling-fenglisu-d9353d.netlify.app/",
-      });
-    } else {
-      alert("your browser don't support");
-    }
-  };
-
   return (
     <div className="header">
       <div id="header">

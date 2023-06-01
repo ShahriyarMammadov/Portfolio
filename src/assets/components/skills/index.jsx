@@ -11,6 +11,7 @@ import sass from "../../images/sass.svg";
 import expressjs from "../../images/express.svg";
 import figma from "../../images/figma.svg";
 import nextjs from "../../images/nextjs.png";
+import typescript from "../../images/typescript.png";
 
 const Skills = () => {
   return (
@@ -26,6 +27,7 @@ const Skills = () => {
       <img src={expressjs} alt="expressjs" />
       <img src={figma} alt="figma" />
       <img src={nextjs} alt="nextjs" />
+      <img src={typescript} alt="typescript" />
     </div>
   );
 };

@@ -7,6 +7,7 @@ import universities from "../../images/universities.png";
 import country from "../../images/country.png";
 import github from "../../images/github.png";
 import magicBook from "../../images/magic.png";
+import delta from "../../images/delta.png";
 
 const ProjectCards = () => {
   return (
@@ -43,6 +44,19 @@ const ProjectCards = () => {
               </div>
               <div className="cardBody">
                 <h2>Magic Books</h2>
+              </div>
+            </div>
+          </a>
+          <a
+            href="https://e-delta.netlify.app/"
+            target={"_blank"}
+          >
+            <div className="card">
+              <div className="image">
+                <img src={delta} alt="delta" />
+              </div>
+              <div className="cardBody">
+                <h2>Delta E-commerce</h2>
               </div>
             </div>
           </a>

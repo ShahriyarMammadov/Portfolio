@@ -1,25 +1,30 @@
 .cards {
   display: flex;
-  justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
   max-width: 1200px;
   margin: 0 auto;
+  gap: 5px;
+
   @media only screen and (max-width: 768px) {
     flex-direction: column;
   }
+
   a {
     width: 33%;
+
     @media only screen and (max-width: 768px) {
       width: 90%;
       margin-top: 25px;
     }
+
     .card {
       text-align: center;
       padding: 2%;
       box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px,
         rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
       cursor: pointer;
+
       img {
         width: 100%;
       }
@@ -27,19 +32,18 @@
       h2 {
         font-size: 20px;
         font-weight: 700;
-        background: linear-gradient(
-          to right,
-          #6441a5 20%,
-          #ba8b02 40%,
-          #4b79a1 60%,
-          #6a9113 80%
-        );
+        background: linear-gradient(to right,
+            #6441a5 20%,
+            #ba8b02 40%,
+            #4b79a1 60%,
+            #6a9113 80%);
         background-size: 200% auto;
         color: #000;
         background-clip: text;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         animation: shine 4s linear infinite;
+
         @keyframes shine {
           to {
             background-position: 200% center;
@@ -48,10 +52,12 @@
       }
     }
   }
+
   .visit {
     color: white;
     margin-top: 20px;
     width: fit-content;
+
     &:hover {
       transition: all 0.5s ease-in;
       color: goldenrod;

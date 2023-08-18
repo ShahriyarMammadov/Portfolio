@@ -14,7 +14,7 @@ const ProjectCards = () => {
     <>
       <div>
         <div className="cards">
-          <a href="https://zingy-entremet-bf70c0.netlify.app" target={"_blank"}>
+          <a href="https://shortenerurlapp.netlify.app/" target={"_blank"}>
             <div className="card">
               <div className="image">
                 <img src={shortly} alt="" />
@@ -24,7 +24,7 @@ const ProjectCards = () => {
               </div>
             </div>
           </a>
-          <a href="https://sunny-zuccutto-110f2c.netlify.app" target={"_blank"}>
+          <a href="https://searchmoviesapplication.netlify.app/" target={"_blank"}>
             <div className="card">
               <div className="image">
                 <img src={movieApp} alt="" />
@@ -35,7 +35,7 @@ const ProjectCards = () => {
             </div>
           </a>
           <a
-            href="https://641c20f0300fcc005fde4e14--brilliant-truffle-d7799c.netlify.app/"
+            href="https://bookingdata.netlify.app/"
             target={"_blank"}
           >
             <div className="card">
@@ -74,7 +74,7 @@ const ProjectCards = () => {
             </div>
           </a>
           <a
-            href="https://symphonious-fairy-964a7e.netlify.app/"
+            href="https://githubusersdetailssearch.netlify.app/"
             target={"_blank"}
           >
             <div className="card">
@@ -87,7 +87,7 @@ const ProjectCards = () => {
             </div>
           </a>
           <a
-            href="https://graceful-pithivier-45fdf6.netlify.app"
+            href="https://countyabout.netlify.app/"
             target={"_blank"}
           >
             <div className="card">
@@ -100,7 +100,7 @@ const ProjectCards = () => {
             </div>
           </a>
           <a
-            href="https://luminous-otter-a5f888.netlify.app/"
+            href="https://weathernext.netlify.app/"
             target={"_blank"}
           >
             <div className="card">

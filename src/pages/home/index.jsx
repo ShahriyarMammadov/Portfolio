@@ -30,7 +30,7 @@ const HomePage = () => {
       navigator.share({
         title: "Shahriyar Mammadov",
         text: "Shahriyar's Portfolio",
-        url: "https://dazzling-fenglisu-d9353d.netlify.app/",
+        url: "https://shahriyarmammadov.netlify.app/",
       });
     } else {
       alert("your browser don't support");
@@ -50,7 +50,7 @@ const HomePage = () => {
             data-aos-easing="ease-in-out"
             data-aos-once="true"
           >
-            <h1>Hi, I am Shahriyar Mammadov, I am a Front-end Developer.</h1>
+            <h1>Hi, I am Shahriyar Mammadov, I am a Full Stack Web Developer.</h1>
             <i
               className="fa-solid fa-share-from-square"
               onClick={handleShare}

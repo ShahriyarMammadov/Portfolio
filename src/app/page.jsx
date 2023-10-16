@@ -2,6 +2,7 @@
 import Image from "next/image";
 import styles from "./page.module.scss";
 import TextTypist from "@/components/typist";
+import Link from "next/link";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAngleRight } from "@fortawesome/free-solid-svg-icons";
 import myImage from "../../public/myImage.png";
@@ -25,7 +26,7 @@ export default function Home() {
             <button>
               Hire Me <FontAwesomeIcon icon={faAngleRight} />
             </button>
-            <Link href="#" >
+            <Link href="#">
               Download Resume
               <FontAwesomeIcon icon={faAngleRight} />
             </Link>

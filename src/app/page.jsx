@@ -25,10 +25,10 @@ export default function Home() {
             <button>
               Hire Me <FontAwesomeIcon icon={faAngleRight} />
             </button>
-            <a href="#">
+            <Link href="#" >
               Download Resume
               <FontAwesomeIcon icon={faAngleRight} />
-            </a>
+            </Link>
           </div>
         </div>
 

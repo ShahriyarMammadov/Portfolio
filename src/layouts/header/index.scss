@@ -1,0 +1,88 @@
+header {
+    background-color: black;
+    padding: 20px 5px;
+    font-family: 'DM Sans', sans-serif;
+
+    .container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .logo {
+
+            a {
+                display: flex;
+                align-items: center;
+                gap: 5px;
+                color: white;
+                text-decoration: none;
+
+                svg {
+                    width: 40px;
+                    height: 40px;
+                    color: #C9F31D;
+                }
+
+                h2 {
+                    margin: 0;
+                }
+            }
+        }
+
+        nav {
+            display: flex;
+            align-items: center;
+            gap: 40px;
+            padding-top: 8px;
+
+
+            div {
+
+                &:hover {
+                    span {
+                        visibility: visible;
+                    }
+                }
+
+                a {
+                    font-weight: 700;
+                    transition: all 0.5s;
+                    color: white;
+                    text-decoration: none;
+                    letter-spacing: 1px;
+                    font-size: 16px;
+
+                    &:hover {
+                        color: #C9F31D;
+                        text-decoration: underline;
+                    }
+                }
+
+                span {
+                    width: 30px;
+                    height: 3px;
+                    display: block;
+                    margin-top: 8px;
+                    background-color: #C9F31D;
+                    border-radius: 10px;
+                    line-height: 30px;
+                    visibility: hidden;
+                }
+            }
+
+        }
+
+        .hamburgerMenu {
+            cursor: pointer;
+            background-color: #C9F31D;
+            border-radius: 50%;
+            padding: 10px;
+            width: 50px;
+
+            svg {
+                width: 25px;
+                height: 25px;
+            }
+        }
+    }
+}

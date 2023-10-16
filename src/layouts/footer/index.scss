@@ -1,0 +1,124 @@
+footer {
+    background-color: #070707;
+    color: white;
+    padding: 80px 5px;
+    font-family: 'DM Sans', sans-serif;
+
+    #footer {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        h4 {
+            margin: 0;
+            font-size: 18px;
+            line-height: 21, 6px;
+        }
+
+
+        .logo {
+            display: flex;
+            align-items: flex-start;
+            flex-wrap: wrap;
+            width: 60%;
+            gap: 17%;
+
+            a {
+                display: flex;
+                align-items: center;
+                gap: 5px;
+                color: white;
+                text-decoration: none;
+
+                svg {
+                    width: 40px;
+                    height: 40px;
+                    color: #C9F31D;
+                }
+
+                h2 {
+                    margin: 0;
+                }
+            }
+
+            .quickLink {
+                width: 480px;
+
+                nav {
+                    display: flex;
+                    justify-content: space-between;
+                    padding: 40px 0;
+                }
+
+                .mailSignUp {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    width: 100%;
+
+                    svg {
+                        border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+                        cursor: pointer;
+                        padding: 15px 0;
+                        color: #C9F31D;
+                    }
+
+                    input {
+                        outline: none;
+                        border: none;
+                        padding: 15px;
+                        background-color: transparent;
+                        border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+                        color: white;
+                        font-weight: 600;
+                        width: 76%;
+                    }
+
+                    button {
+                        display: flex;
+                        align-items: center;
+                        gap: 6px;
+                        font-weight: 700;
+                        padding: 0 10px;
+                        background-color: #C9F31D;
+                        border: none;
+                        border-radius: 10px;
+                        cursor: pointer;
+                        margin-left: 10px;
+
+                        svg {
+                            color: black;
+                        }
+                    }
+                }
+            }
+        }
+
+        .address {
+
+            .navigate {
+                padding: 40px 0;
+
+                div {
+                    padding-top: 20px;
+                    font-size: 18px;
+
+                    &:nth-child(1) {
+                        padding-top: 0;
+                    }
+
+                    a {
+                        text-decoration: none;
+                        color: white;
+                    }
+
+                    svg {
+                        color: #C9F31D;
+                        width: 20px;
+                        padding-right: 10px;
+                    }
+                }
+            }
+        }
+    }
+}

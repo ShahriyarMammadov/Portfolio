@@ -34,7 +34,7 @@ export default function Home() {
         </div>
 
         <div className={styles.centerImage}>
-          <Image src={myImage} alt="myImage" />
+          <Image src={myImage} alt="myImage" priority/>
           <div className={styles.experience}>
             <div>
               <p className={styles.number}>2+</p>

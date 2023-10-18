@@ -11,47 +11,57 @@ export default function Home() {
   return (
     <main className={styles.homePage}>
       <div className={styles.container}>
-        <div className={styles.leftDescription}>
-          <h2>Hello, i'm</h2>
-          <h1>Shahriyar Mammadov</h1>
-          <TextTypist
-            textArray={[500, "web developer", 1000, "web designer"]}
-          />
-          <p>
-            We denounce with righteous indignation dislike demoralized by the
-            charms of pleasure
-          </p>
+        <div className={styles.firstSection}>
+          <div className={styles.leftDescription}>
+            <h2>Hello, i'm</h2>
+            <h1>Shahriyar Mammadov</h1>
+            <TextTypist
+              textArray={[500, "web developer", 1000, "web designer"]}
+            />
+            <p>
+              We denounce with righteous indignation dislike demoralized by the
+              charms of pleasure
+            </p>
 
-          <div>
-            <button>
-              Hire Me <FontAwesomeIcon icon={faAngleRight} />
-            </button>
-            <Link href="#">
-              Download Resume
-              <FontAwesomeIcon icon={faAngleRight} />
-            </Link>
+            <div>
+              <button>
+                Hire Me <FontAwesomeIcon icon={faAngleRight} />
+              </button>
+              <Link href="#">
+                Download Resume
+                <FontAwesomeIcon icon={faAngleRight} />
+              </Link>
+            </div>
+          </div>
+
+          <div className={styles.centerImage}>
+            <Image src={myImage} alt="myImage" priority />
+            <div className={styles.experience}>
+              <div>
+                <p className={styles.number}>2+</p>
+                <p>Years Of Experience</p>
+              </div>
+              <hr />
+              <div>
+                <p className={styles.number}>10+</p>
+                <p>Project Complete</p>
+              </div>
+              <hr />
+              <div>
+                <p className={styles.number}>100%</p>
+                <p>Client Satisfactions</p>
+              </div>
+            </div>
           </div>
         </div>
 
-        <div className={styles.centerImage}>
-          <Image src={myImage} alt="myImage" priority/>
-          <div className={styles.experience}>
-            <div>
-              <p className={styles.number}>2+</p>
-              <p>Years Of Experience</p>
-            </div>
-            <hr />
-            <div>
-              <p className={styles.number}>10+</p>
-              <p>Project Complete</p>
-            </div>
-            <hr />
-            <div>
-              <p className={styles.number}>100%</p>
-              <p>Client Satisfactions</p>
-            </div>
+        {/* ABOUT ME */}
+
+        <section className={styles.aboutMeSection}>
+          <div className={styles.sectionName}>
+            <h5>About Me</h5>
           </div>
-        </div>
+        </section>
       </div>
     </main>
   );

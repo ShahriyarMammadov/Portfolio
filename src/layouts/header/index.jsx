@@ -1,5 +1,5 @@
 "use client";
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "./index.scss";
 import Link from "next/link";
 import Image from "next/image";
@@ -7,9 +7,26 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAsterisk, faBarsStaggered } from "@fortawesome/free-solid-svg-icons";
 
 const Header = () => {
+  const [scrolled, setScrolled] = useState(false);
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 80) {
+        setScrolled(true);
+      } else {
+        setScrolled(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
-    <header>
-      <div className="container">
+    <header className={scrolled ? "scrolled" : ""}>
+      <div className={"container"}>
         <div className="logo">
           <Link href={"/"}>
             <FontAwesomeIcon icon={faAsterisk} />

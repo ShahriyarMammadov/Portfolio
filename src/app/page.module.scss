@@ -2,290 +2,379 @@
     box-sizing: border-box;
     font-family: 'DM Sans', sans-serif;
     background-color: #131313;
+    overflow: hidden;
+
+    p {
+        font-size: 16px;
+        color: rgba(255, 255, 255, 0.65);
+        line-height: 30px;
+    }
 
     .container {
-        .firstSection {
-            display: flex;
-            align-items: center;
-            width: 100%;
-            max-width: 1500px;
-            margin: 0 auto;
-            padding: 150px 5px 80px 5px;
+        max-width: 1500px;
+        margin: 0 auto;
+        padding: 50px 80px;
+    }
 
-            .leftDescription {
-                width: 35%;
-                min-width: 400px;
+    .sectionName {
+        h5 {
+            font-size: 16px;
+            margin: 0;
+            color: rgba(255, 255, 255, 0.65);
+        }
+    }
 
-                h1,
-                h2,
-                h3 {
-                    margin: 5px 0;
-                }
+    .firstSection {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        max-width: 1500px;
+        margin: 0 auto;
+        padding: 150px 5px 80px 5px;
 
-                h2 {
-                    font-size: 45px;
-                    line-height: 54px;
-                    letter-spacing: 0;
-                    color: rgba(255, 255, 255, 0.35);
-                    font-weight: 400;
-                }
+        .leftDescription {
+            width: 35%;
+            min-width: 400px;
 
-                h1 {
-                    color: #c9f31d;
-                    font-size: 65px;
-                    font-weight: 700;
-                }
+            h1,
+            h2,
+            h3 {
+                margin: 5px 0;
+            }
 
-                h3 {
-                    font-weight: 700;
-                    font-size: 65px;
-                    color: #ffffff;
-                    line-height: 60px;
-                }
+            h2 {
+                font-size: 45px;
+                line-height: 54px;
+                letter-spacing: 0;
+                color: rgba(255, 255, 255, 0.35);
+                font-weight: 400;
+            }
 
-                p {
-                    font-size: 16px;
-                    color: rgba(255, 255, 255, 0.35);
-                    line-height: 30px;
-                    margin: 20px 0;
-                }
+            h1 {
+                color: #c9f31d;
+                font-size: 65px;
+                font-weight: 700;
+            }
 
-                button {
-                    background-color: #c9f31d;
-                    font-weight: 700;
-                    border: none;
-                    border-radius: 10px;
-                    padding: 15px 0;
-                    font-size: 16px;
-                    width: 120px;
-                    cursor: pointer;
-                    margin-right: 40px;
+            h3 {
+                font-weight: 700;
+                font-size: 65px;
+                color: #ffffff;
+                line-height: 60px;
+            }
 
-                    svg {
-                        transition: all 0.5s;
-                    }
+            p {
+                font-size: 16px;
+                color: rgba(255, 255, 255, 0.35);
+                line-height: 30px;
+                margin: 20px 0;
+            }
 
-                    &:hover {
-                        svg {
-                            transform: translateX(8px);
-                        }
-                    }
-                }
+            button {
+                background-color: #c9f31d;
+                font-weight: 700;
+                border: none;
+                border-radius: 10px;
+                padding: 15px 0;
+                font-size: 16px;
+                width: 120px;
+                cursor: pointer;
+                margin-right: 40px;
 
-                a {
-                    text-decoration: underline;
-                    color: white;
+                svg {
                     transition: all 0.5s;
+                }
 
+                &:hover {
                     svg {
-                        transition: all 0.5s;
-                        font-size: 12px;
-                        padding-left: 5px;
-                    }
-
-                    &:hover {
-                        color: #c9f31d;
-
-                        svg {
-                            transform: translateX(5px);
-                            color: #c9f31d;
-                        }
+                        transform: translateX(8px);
                     }
                 }
             }
 
-            .centerImage {
-                display: flex;
-                align-items: center;
-                justify-content: space-between;
-                width: 65%;
+            a {
+                text-decoration: underline;
+                color: white;
+                transition: all 0.5s;
 
-                img {
-                    width: 60%;
-                    height: fit-content;
+                svg {
+                    transition: all 0.5s;
+                    font-size: 12px;
+                    padding-left: 5px;
                 }
 
-                .experience {
-                    background-color: #070707;
-                    padding: 20px 40px;
-                    border-radius: 16px;
+                &:hover {
+                    color: #c9f31d;
 
-                    div {
-                        padding: 10px 0;
-
-                        p {
-                            margin: 0;
-                            color: rgba(255, 255, 255, 0.65);
-                        }
-
-                        .number {
-                            font-weight: 500;
-                            font-size: 40px;
-                            color: #c9f31d;
-                            padding-bottom: 8px;
-                        }
+                    svg {
+                        transform: translateX(5px);
+                        color: #c9f31d;
                     }
                 }
             }
         }
 
-        .aboutMeSection {
-            background-color: #070707;
-            padding: 50px 5px 50px 5px;
+        .centerImage {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 65%;
 
-            .container {
-                padding: 20px 80px;
-                max-width: 1500px;
-                margin: 0 auto;
+            img {
+                width: 60%;
+                height: fit-content;
             }
 
-            .sectionName {
-                h5 {
-                    font-size: 16px;
-                    color: rgba(255, 255, 255, 0.65);
-                }
-            }
+            .experience {
+                background-color: #070707;
+                padding: 20px 40px;
+                border-radius: 16px;
 
-            .flex {
-                display: flex;
-                justify-content: space-between;
-                // align-items: center;
-
-                .left {
-                    width: 50%;
-
-                    h1 {
-                        color: #ffffff;
-                        font-size: 45px;
-                        font-weight: 600;
-                        line-height: 54px;
-
-                        span {
-                            color: #c9f31d;
-                        }
-                    }
+                div {
+                    padding: 10px 0;
 
                     p {
-                        font-size: 16px;
+                        margin: 0;
                         color: rgba(255, 255, 255, 0.65);
-                        line-height: 30px;
                     }
 
-                    .checkDiv {
+                    .number {
+                        font-weight: 500;
+                        font-size: 40px;
+                        color: #c9f31d;
+                        padding-bottom: 8px;
+                    }
+                }
+            }
+        }
+    }
 
-                        .check {
+    .aboutMeSection {
+        background-color: #070707;
+
+        .flex {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            .left {
+                width: 50%;
+
+                h1 {
+                    color: #ffffff;
+                    font-size: 45px;
+                    font-weight: 600;
+                    line-height: 54px;
+
+                    span {
+                        color: #c9f31d;
+                    }
+                }
+
+                .checkDiv {
+
+                    .check {
+                        display: flex;
+                        align-items: center;
+                        color: white;
+
+                        div {
+                            width: 50%;
                             display: flex;
                             align-items: center;
-                            color: white;
+                            gap: 10px;
 
-                            div {
-                                width: 50%;
-                                display: flex;
-                                align-items: center;
-                                gap: 10px;
-
-                                h2 {
-                                    font-size: 20px;
-                                    font-weight: 500;
-                                    line-height: 30px;
-                                }
-
-                                svg {
-                                    color: #c9f31d;
-                                }
+                            h2 {
+                                font-size: 20px;
+                                font-weight: 500;
+                                line-height: 30px;
                             }
-                        }
-                    }
 
-                    .contactMe {
-                        background-color: #1F1F1F;
-                        border-radius: 20px;
-                        display: flex;
-                        gap: 60px;
-                        padding: 20px 40px;
-
-                        svg {
-                            background-color: #c9f31d;
-                            padding: 10px;
-                            border-radius: 50%;
-                        }
-
-                        p {
-                            margin: 0;
-                        }
-
-                        a {
-                            text-decoration: none;
-                            color: white;
-                            transition: all 0.5s;
-
-                            &:hover {
+                            svg {
                                 color: #c9f31d;
                             }
                         }
-
-                        .mail,
-                        .phone {
-                            display: flex;
-                            gap: 10px;
-                            align-items: center;
-                        }
                     }
                 }
 
-                .right {
-                    position: relative;
+                .contactMe {
+                    background-color: #1F1F1F;
+                    border-radius: 20px;
+                    display: flex;
+                    gap: 60px;
+                    padding: 20px 40px;
 
-                    .animatedImage {
-                        position: absolute;
-                        top: 100px;
-                        left: -100px;
-                        animation: infinityLood linear 10s infinite;
+                    svg {
+                        background-color: #c9f31d;
+                        padding: 10px;
+                        border-radius: 50%;
                     }
+
+                    p {
+                        margin: 0;
+                    }
+
+                    a {
+                        text-decoration: none;
+                        color: white;
+                        transition: all 0.5s;
+
+                        &:hover {
+                            color: #c9f31d;
+                        }
+                    }
+
+                    .mail,
+                    .phone {
+                        display: flex;
+                        gap: 10px;
+                        align-items: center;
+                    }
+                }
+            }
+
+            .right {
+                position: relative;
+
+                .animatedImage {
+                    position: absolute;
+                    top: 100px;
+                    left: -100px;
+                    animation: infinityLood linear 10s infinite;
+                }
+
+                .image {
+                    img {
+                        border-radius: 10px;
+                    }
+                }
+
+                .myName,
+                .myRole {
+                    background-color: #ffffff;
+                    width: 250px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    padding: 4px 10px;
+                    border-radius: 32px;
+                    z-index: 2;
+
+                    h4 {
+                        margin: 0;
+                    }
+
+                    img {
+                        width: 40px;
+                        height: 40px;
+                        border-radius: 50%;
+                    }
+                }
+
+                .myName {
+                    position: absolute;
+                    top: 240px;
+                    left: -100px;
+                }
+
+
+                .myRole {
+                    position: absolute;
+                    top: 350px;
+                    left: -150px;
+                    padding: 8px 10px;
 
                     .image {
-                        img {
-                            border-radius: 10px;
-                        }
+                        color: #c9f31d;
                     }
+                }
+            }
+        }
+    }
 
-                    .myName,
-                    .myRole {
-                        background-color: #ffffff;
-                        width: 250px;
+    .myResumeSection {
+        .flex {
+            display: flex;
+            gap: 8%;
+
+            .leftLogo {
+                height: fit-content;
+                padding: 40px;
+                border-radius: 50%;
+                border: 1px solid rgba(255, 255, 255, 0.35);
+                background-color: #1F1F1F;
+
+                svg {
+                    width: 180px;
+                    height: 180px;
+                    color: #c9f31d;
+                }
+            }
+
+            .right {
+                h1 {
+                    color: #ffffff;
+                    font-size: 45px;
+                    font-weight: 600;
+                    line-height: 54px;
+                    margin: 30px 0;
+
+                    span {
+                        color: #c9f31d;
+                    }
+                }
+
+                .resumeCard {
+                    background-color: #1F1F1F;
+                    display: flex;
+                    flex-wrap: wrap;
+                    gap: 60px;
+                    padding: 60px;
+                    border-radius: 30px;
+
+                    .card {
                         display: flex;
-                        align-items: center;
-                        justify-content: space-between;
-                        padding: 4px 10px;
-                        border-radius: 32px;
-                        z-index: 2;
+                        gap: 20px;
+                        align-items: flex-start;
+                        padding-top: 40px;
 
-                        h4 {
-                            margin: 0;
+                        &:nth-child(1) {
+                            padding-top: 0;
                         }
 
-                        img {
-                            width: 40px;
-                            height: 40px;
+                        &:hover {
+                            .icon {
+                                background-color: #c9f31d;
+
+                                svg {
+                                    color: black;
+                                }
+                            }
+                        }
+
+                        .name {
+                            p {
+                                margin: 0;
+                            }
+
+                            h3 {
+                                color: #ffffff;
+                                margin: 5px 0;
+                                font-size: 24px;
+                            }
+                        }
+
+                        .icon {
+                            background-color: #131313;
+                            padding: 10px;
                             border-radius: 50%;
-                        }
-                    }
+                            width: 40px;
+                            text-align: center;
+                            transition: all 0.5s;
 
-                    .myName {
-                        position: absolute;
-                        top: 240px;
-                        left: -100px;
-                    }
-
-
-                    .myRole {
-                        position: absolute;
-                        top: 350px;
-                        left: -150px;
-                        padding: 8px 10px;
-
-                        .image {
-                            color: #c9f31d;
+                            svg {
+                                color: #1F1F1F;
+                            }
                         }
                     }
                 }

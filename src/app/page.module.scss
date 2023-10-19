@@ -10,6 +10,18 @@
         line-height: 30px;
     }
 
+    h1 {
+        color: #ffffff;
+        font-size: 45px;
+        font-weight: 600;
+        line-height: 54px;
+        margin: 30px 0;
+
+        span {
+            color: #c9f31d;
+        }
+    }
+
     .container {
         max-width: 1500px;
         margin: 0 auto;
@@ -160,17 +172,6 @@
             .left {
                 width: 50%;
 
-                h1 {
-                    color: #ffffff;
-                    font-size: 45px;
-                    font-weight: 600;
-                    line-height: 54px;
-
-                    span {
-                        color: #c9f31d;
-                    }
-                }
-
                 .checkDiv {
 
                     .check {
@@ -312,17 +313,6 @@
             }
 
             .right {
-                h1 {
-                    color: #ffffff;
-                    font-size: 45px;
-                    font-weight: 600;
-                    line-height: 54px;
-                    margin: 30px 0;
-
-                    span {
-                        color: #c9f31d;
-                    }
-                }
 
                 .resumeCard {
                     background-color: #1F1F1F;
@@ -376,6 +366,258 @@
                                 color: #1F1F1F;
                             }
                         }
+                    }
+                }
+            }
+        }
+    }
+
+    .popularServicesSection {
+        .sectionName {
+            text-align: center;
+        }
+
+        .headText {
+            width: 50%;
+            text-align: center;
+            margin: 0 auto;
+        }
+
+        .cards {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 40px;
+
+            .card {
+                display: flex;
+                justify-content: space-between;
+                width: calc((100% / 2) - 20px);
+                background-color: #1F1F1F;
+                border: 1px solid rgba(255, 255, 255, 0.1);
+                border-radius: 20px;
+                padding: 30px;
+                transition: all 0.5s;
+
+                &:hover {
+                    border: 1px solid #c9f31d;
+
+                    .icon {
+                        background-color: #c9f31d;
+
+                        svg {
+                            color: black;
+                        }
+                    }
+                }
+
+                .number {
+                    color: white;
+                    font-size: 24px;
+                }
+
+                .icon {
+                    background-color: #131313;
+                    height: fit-content;
+                    padding: 15px;
+                    border-radius: 50%;
+                    transition: all 0.5s;
+                    cursor: pointer;
+
+                    svg {
+                        transition: all 0.5s;
+                        color: white;
+                        width: 20px;
+                        height: 20px;
+                    }
+                }
+
+                .serviceName {
+
+                    h2,
+                    p {
+                        margin: 0;
+                    }
+
+                    h2 {
+                        font-size: 24px;
+                        line-height: 26.4px;
+                        color: white;
+                    }
+                }
+            }
+        }
+    }
+
+    .mySkills {
+        background-color: #070707;
+
+        .container {
+            display: flex;
+            gap: 40px;
+
+            .left {
+                width: 35%;
+            }
+
+            .rightSkills {
+                width: 62%;
+
+                .skills {
+                    display: flex;
+                    flex-wrap: wrap;
+                    gap: 20px;
+
+                    .skill {
+                        width: calc((100% / 4) - 15px);
+                        background-color: #1F1F1F;
+                        padding: 10px;
+                        border-radius: 20px;
+                        border: 1px solid rgba(255, 255, 255, 0.35);
+                        transition: border 0.5s;
+
+                        &:hover {
+                            border: 1px solid #c9f31d;
+
+                            .skillPercentage {
+                                background-color: #c9f31d;
+                                color: black;
+                            }
+                        }
+
+                        .skillLogo {
+                            text-align: center;
+
+                            img {
+                                width: 110px;
+                                height: 110px;
+                            }
+                        }
+
+                        .skillName {
+                            h4 {
+                                text-align: center;
+                                color: white;
+                                margin: 0;
+                                margin-bottom: 10px;
+                                font-size: 20px;
+                                line-height: 28px;
+                            }
+                        }
+
+                        .skillPercentage {
+                            background-color: #131313;
+                            color: rgba(255, 255, 255, 0.65);
+                            text-align: center;
+                            border-radius: 20px;
+                            padding: 10px 0;
+                            transition: all 0.5s;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .latestWorksSection {
+        .container {
+
+            .sectionName,
+            .headText {
+                text-align: center;
+            }
+
+            .projects {
+                padding-top: 40px;
+
+                .project {
+                    display: flex;
+                    align-items: center;
+                    gap: 95px;
+                    padding-bottom: 80px;
+
+                    .projectDescription {
+                        width: 40%;
+
+                        b {
+                            color: #c9f31d;
+                            font-size: 16px;
+                            line-height: 30px;
+                        }
+
+                        a {
+                            display: block;
+                            width: fit-content;
+                            text-decoration: none;
+                            color: #ffffff;
+                            font-weight: 500;
+                            line-height: 54px;
+                            font-size: 45px;
+                            transition: color 0.5s;
+                            margin-top: 15px;
+
+                            &:hover {
+                                color: #c9f31d;
+                            }
+                        }
+
+                        .icon {
+                            margin-top: 40px;
+                            width: fit-content;
+
+                            &:hover {
+                                a {
+                                    background-color: #c9f31d;
+
+                                    svg {
+                                        color: black;
+                                    }
+                                }
+                            }
+
+                            a {
+                                padding: 5px;
+                                border-radius: 50%;
+                                background-color: #070707;
+                                color: #1F1F1F;
+                                cursor: pointer;
+                                text-align: center;
+                                width: fit-content;
+                                width: 65px;
+                                border: 1px solid rgba(255, 255, 255, 0.35);
+                                transition: all 0.5s;
+
+                                svg {
+                                    transition: all 0.5s;
+                                    width: 25px;
+                                    color: rgba(255, 255, 255, 0.65);
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            .viewMoreButton {
+                text-align: center;
+
+                .btn {
+                    text-decoration: none;
+                    background-color: #c9f31d;
+                    border-radius: 15px;
+                    padding: 10px 20px;
+                    transition: all 0.5s;
+                    color: black;
+
+                    svg {
+                        transition: all 0.5s;
+                        font-size: 13px;
+                    }
+
+                }
+
+                &:hover {
+                    svg {
+                        transform: translateX(5px);
                     }
                 }
             }

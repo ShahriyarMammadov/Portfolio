@@ -28,6 +28,7 @@ import react from "../../public/skills/react.svg";
 import express from "../../public/skills/express.svg";
 import project1 from "../../public/project1.jpg";
 import project2 from "../../public/project2.jpg";
+import ContactPage from "@/components/contact";
 
 export default function Home() {
   useEffect(() => {
@@ -514,6 +515,8 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      <ContactPage />
     </main>
   );
 }

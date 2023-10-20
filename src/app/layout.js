@@ -4,6 +4,8 @@ import Header from "@/layouts/header";
 import Footer from "@/layouts/footer";
 import "@fortawesome/fontawesome-svg-core/styles.css";
 import { config } from "@fortawesome/fontawesome-svg-core";
+import Head from "next/head";
+import { Analytics } from "@vercel/analytics/react";
 config.autoAddCss = false;
 
 const inter = Inter({ subsets: ["latin"] });
@@ -16,7 +18,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <head>
+      <Head>
         <link rel="shortcut icon" href="/favicon.ico" />
         {/* GOOGLE FONTS */}
         <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -25,10 +27,11 @@ export default function RootLayout({ children }) {
           href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,600&display=swap"
           rel="stylesheet"
         ></link>
-      </head>
+      </Head>
       <body className={inter.className}>
         <Header />
         {children}
+        <Analytics />
         <Footer />
       </body>
     </html>

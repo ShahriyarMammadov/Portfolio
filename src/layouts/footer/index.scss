@@ -23,21 +23,49 @@ footer {
             width: 60%;
             gap: 17%;
 
-            a {
-                display: flex;
-                align-items: center;
-                gap: 5px;
-                color: white;
-                text-decoration: none;
+            div {
+                a {
+                    display: flex;
+                    align-items: center;
+                    gap: 5px;
+                    color: white;
+                    text-decoration: none;
 
-                svg {
-                    width: 40px;
-                    height: 40px;
-                    color: #C9F31D;
+                    svg {
+                        font-size: 40px;
+                        color: #C9F31D;
+                    }
+
+                    h2 {
+                        margin: 0;
+                    }
                 }
+            }
 
-                h2 {
-                    margin: 0;
+            .socialIcons {
+                margin-top: 40px;
+
+                a {
+                    display: inline-block;
+                    margin-left: 6px;
+
+                    &:nth-child(1) {
+                        margin-left: 0;
+                    }
+
+                    &:hover {
+                        svg {
+                            color: #C9F31D;
+                            transform: scale(1.2);
+                        }
+                    }
+
+                    svg {
+                        transition: all 0.5s;
+                        color: white;
+                        cursor: pointer;
+                        font-size: 25px;
+                    }
                 }
             }
 

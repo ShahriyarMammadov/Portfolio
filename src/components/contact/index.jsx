@@ -9,7 +9,7 @@ import {
   PaperClipOutlined,
 } from "@ant-design/icons";
 import { Input } from "antd";
-import { faCheck } from "@fortawesome/free-solid-svg-icons";
+import { faCheck, faChevronRight } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const ContactPage = () => {
@@ -111,6 +111,10 @@ const ContactPage = () => {
                 }}
               />
             </div>
+
+            <button>
+              Send Us Message <FontAwesomeIcon icon={faChevronRight} />
+            </button>
           </form>
         </div>
       </div>

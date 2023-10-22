@@ -23,12 +23,15 @@ import "aos/dist/aos.css";
 import html from "../../public/skills/html.png";
 import css from "../../public/skills/css.png";
 import typescript from "../../public/skills/typescript.png";
+import javascript from "../../public/skills/javascript.png";
+import nextjs from "../../public/skills/nextjs.svg";
 import nodejs from "../../public/skills/nodejs.svg";
 import react from "../../public/skills/react.svg";
 import express from "../../public/skills/express.svg";
 import project1 from "../../public/project1.jpg";
 import project2 from "../../public/project2.jpg";
 import ContactPage from "@/components/contact";
+import LatestBlogAndNews from "@/components/latestBlogAndNews";
 
 export default function Home() {
   useEffect(() => {
@@ -433,7 +436,7 @@ export default function Home() {
 
               <div className={styles.skill}>
                 <div className={styles.skillLogo}>
-                  <Image src={html} alt="NEXT.JS" />
+                  <Image src={nextjs} alt="NEXT.JS" />
                 </div>
                 <div className={styles.skillName}>
                   <h4>Next.js</h4>
@@ -443,7 +446,7 @@ export default function Home() {
 
               <div className={styles.skill}>
                 <div className={styles.skillLogo}>
-                  <Image src={html} alt="JAVASCRIPT" />
+                  <Image src={javascript} alt="JAVASCRIPT" />
                 </div>
                 <div className={styles.skillName}>
                   <h4>JavaScript</h4>
@@ -516,7 +519,11 @@ export default function Home() {
         </div>
       </section>
 
+      {/* CONTACT SECTION */}
       <ContactPage />
+
+      {/* LATEST BLOG AND NEWS SECTION */}
+      <LatestBlogAndNews />
     </main>
   );
 }

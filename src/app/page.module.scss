@@ -20,12 +20,24 @@
         span {
             color: #c9f31d;
         }
+
+        @media only screen and (max-width: 768px) {
+            font-size: 40px !important;
+        }
+
+        @media only screen and (max-width: 425px) {
+            font-size: 32px !important;
+        }
     }
 
     .container {
         max-width: 1500px;
         margin: 0 auto;
         padding: 50px 80px;
+
+        @media only screen and (max-width: 1100px) {
+            padding: 50px 15px !important;
+        }
     }
 
     .sectionName {
@@ -39,14 +51,29 @@
     .firstSection {
         display: flex;
         align-items: center;
+        justify-content: space-between;
         width: 100%;
+        gap: 10px;
         max-width: 1500px;
         margin: 0 auto;
-        padding: 150px 5px 80px 5px;
+        padding: 110px 5px 80px 5px;
 
         .leftDescription {
-            width: 35%;
-            min-width: 400px;
+            width: 80%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 10px;
+
+            .centerImage {
+                width: 70%;
+
+                img {
+                    width: 100%;
+                    height: fit-content;
+                }
+
+            }
 
             h1,
             h2,
@@ -60,12 +87,21 @@
                 letter-spacing: 0;
                 color: rgba(255, 255, 255, 0.35);
                 font-weight: 400;
+
+
+                @media only screen and (max-width: 1200px) {
+                    font-size: 40px !important;
+                }
             }
 
             h1 {
                 color: #c9f31d;
                 font-size: 65px;
                 font-weight: 700;
+
+                @media only screen and (max-width: 1200px) {
+                    font-size: 55px !important;
+                }
             }
 
             h3 {
@@ -73,6 +109,11 @@
                 font-size: 65px;
                 color: #ffffff;
                 line-height: 60px;
+
+
+                @media only screen and (max-width: 1200px) {
+                    font-size: 45px !important;
+                }
             }
 
             p {
@@ -126,36 +167,98 @@
             }
         }
 
-        .centerImage {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            width: 65%;
+        .experience {
+            background-color: #070707;
+            padding: 20px 40px;
+            border-radius: 16px;
 
-            img {
-                width: 60%;
-                height: fit-content;
+            div {
+                padding: 10px 0;
+
+                p {
+                    margin: 0;
+                    color: rgba(255, 255, 255, 0.65);
+                }
+
+                .number {
+                    font-weight: 600;
+                    font-size: 40px;
+                    color: #c9f31d;
+                    padding-bottom: 8px;
+                }
+            }
+        }
+
+        @media only screen and (max-width: 1100px) {
+
+            .leftDescription {
+                gap: 5px;
+
+                h1 {
+                    font-size: 45px !important;
+                }
+
+                h2 {
+                    font-size: 30px !important;
+                }
+
+                h3 {
+                    font-size: 40px !important;
+                }
+
+                button {
+                    padding: 10px 0;
+                }
+            }
+        }
+
+        @media only screen and (max-width: 1000px) {
+            flex-wrap: wrap;
+
+            .leftDescription {
+                width: 100%;
             }
 
             .experience {
-                background-color: #070707;
-                padding: 20px 40px;
-                border-radius: 16px;
+                width: 100%;
+                text-align: center;
+            }
+        }
 
-                div {
-                    padding: 10px 0;
+        @media only screen and (max-width: 768px) {
+            .leftDescription {
 
-                    p {
-                        margin: 0;
-                        color: rgba(255, 255, 255, 0.65);
-                    }
+                h1,
+                h3 {
+                    font-size: 40px !important;
+                }
 
-                    .number {
-                        font-weight: 500;
-                        font-size: 40px;
-                        color: #c9f31d;
-                        padding-bottom: 8px;
-                    }
+                h2 {
+                    font-size: 30px !important;
+                }
+            }
+        }
+
+        @media only screen and (max-width: 700px) {
+            padding: 110px 15px 80px 15px !important;
+
+            .leftDescription {
+                width: 100%;
+                flex-wrap: wrap;
+
+                .centerImage {
+                    padding-top: 20px;
+                    width: 100%;
+                }
+            }
+        }
+
+        @media only screen and (max-width: 425px) {
+            .leftDescription {
+
+                h1,
+                h3 {
+                    font-size: 32px !important;
                 }
             }
         }
@@ -202,6 +305,7 @@
                     background-color: #1F1F1F;
                     border-radius: 20px;
                     display: flex;
+                    flex-wrap: wrap;
                     gap: 60px;
                     padding: 20px 40px;
 
@@ -230,6 +334,7 @@
                         display: flex;
                         gap: 10px;
                         align-items: center;
+                        min-width: 200px;
                     }
                 }
             }
@@ -245,6 +350,7 @@
                 }
 
                 .image {
+
                     img {
                         border-radius: 10px;
                     }
@@ -290,6 +396,95 @@
                     }
                 }
             }
+
+            @media only screen and (max-width: 1200px) {
+                .right {
+                    .myName {
+                        left: -50px;
+                    }
+
+                    .myRole {
+                        left: -70px;
+                    }
+                }
+            }
+
+            @media only screen and (max-width: 970px) {
+                flex-direction: column;
+
+                .left {
+                    width: 100%;
+                }
+
+                .right {
+                    padding-top: 40px;
+                }
+            }
+
+            @media only screen and (max-width: 650px) {
+                .right {
+                    .animatedImage {
+                        top: 50px;
+                        left: -40px;
+                    }
+
+                    .myName {
+                        top: 420px;
+                        left: -10px !important;
+                    }
+
+                    .myRole {
+                        top: 500px;
+                        left: -10px;
+                    }
+                }
+            }
+
+            @media only screen and (max-width: 475px) {
+                .left {
+                    .checkDiv {
+                        margin-bottom: 25px;
+
+                        .check {
+                            flex-direction: column !important;
+
+                            div {
+                                width: 100%;
+                            }
+                        }
+                    }
+                }
+
+                .right {
+                    padding: 60px 0 0 0;
+
+                    .image {
+                        width: 100%;
+
+                        img {
+                            width: 100%;
+                            height: fit-content;
+                        }
+                    }
+
+                    .animatedImage {
+                        top: 15px;
+                        left: 10px;
+                    }
+
+                    .myName {
+                        width: 200px;
+                        padding: 2px 8px;
+                        top: 330px;
+                        left: 10px !important;
+                    }
+
+                    .myRole {
+                        top: 400px;
+                        left: 10px;
+                    }
+                }
+            }
         }
     }
 
@@ -313,11 +508,9 @@
             }
 
             .right {
-
                 .resumeCard {
                     background-color: #1F1F1F;
                     display: flex;
-                    flex-wrap: wrap;
                     gap: 60px;
                     padding: 60px;
                     border-radius: 30px;
@@ -366,6 +559,51 @@
                                 color: #1F1F1F;
                             }
                         }
+                    }
+                }
+            }
+
+            @media only screen and (max-width: 1000px) {
+                flex-wrap: wrap;
+
+                .right {
+                    width: 100%;
+                    padding-top: 40px;
+
+                    .resumeCard {
+                        gap: 20px;
+                    }
+                }
+            }
+
+            @media only screen and (max-width: 900px) {
+                .right {
+                    .resumeCard {
+                        padding: 20px;
+                    }
+                }
+            }
+
+            @media only screen and (max-width: 800px) {
+                .right {
+                    hr {
+                        display: none;
+                    }
+
+                    .resumeCard {
+                        width: fit-content;
+                        margin: 0 auto;
+                        flex-direction: column;
+                        padding: 50px;
+                        width: 100%;
+                    }
+                }
+            }
+
+            @media only screen and (max-width: 490px) {
+                .right {
+                    .resumeCard {
+                        padding: 20px;
                     }
                 }
             }
@@ -442,6 +680,64 @@
                         font-size: 24px;
                         line-height: 26.4px;
                         color: white;
+                    }
+                }
+            }
+        }
+
+        @media only screen and (max-width: 900px) {
+            .headText {
+                width: 100%;
+            }
+
+            .cards {
+                flex-direction: column;
+
+                .card {
+                    margin: 0 auto;
+                    width: 90%;
+                }
+            }
+        }
+
+        @media only screen and (max-width: 520px) {
+            .cards {
+                .card {
+                    width: 100%;
+                }
+            }
+        }
+
+        @media only screen and (max-width: 425px) {
+            .cards {
+                .card {
+                    h2 {
+                        font-size: 20px !important;
+                    }
+
+                    p {
+                        font-size: 12px !important;
+                    }
+
+                    .number {
+                        font-size: 20px !important;
+                    }
+                }
+            }
+        }
+
+        @media only screen and (max-width: 400px) {
+            .cards {
+                .card {
+                    flex-direction: column;
+
+                    .serviceName {
+                        margin-top: 10px;
+                    }
+
+                    .icon {
+                        margin-top: 10px;
+                        width: fit-content;
                     }
                 }
             }

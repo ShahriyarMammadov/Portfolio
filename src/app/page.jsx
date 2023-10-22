@@ -90,44 +90,45 @@ export default function Home() {
     <main className={styles.homePage}>
       <div className={styles.firstSection} data-aos="flip-up">
         <div className={styles.leftDescription}>
-          <h2>Hello, i'm</h2>
-          <h1>Shahriyar Mammadov</h1>
-          <TextTypist
-            textArray={[500, "web developer", 1000, "web designer"]}
-          />
-          <p>
-            We denounce with righteous indignation dislike demoralized by the
-            charms of pleasure
-          </p>
-
-          <div>
-            <button>
-              Hire Me <FontAwesomeIcon icon={faAngleRight} />
-            </button>
-            <Link href="#">
-              Download Resume
-              <FontAwesomeIcon icon={faAngleRight} />
-            </Link>
+          <div className={styles.flexDiv}>
+            <h2>Hello, i'm</h2>
+            <h1>Shahriyar Mammadov</h1>
+            <TextTypist
+              textArray={[500, "web developer", 1000, "web designer"]}
+            />
+            <p>
+              We denounce with righteous indignation dislike demoralized by the
+              charms of pleasure
+            </p>
+            <div>
+              <button>
+                Hire Me <FontAwesomeIcon icon={faAngleRight} />
+              </button>
+              <Link href="#">
+                Download Resume
+                <FontAwesomeIcon icon={faAngleRight} />
+              </Link>
+            </div>
+          </div>
+          <div className={styles.centerImage}>
+            <Image src={myImage} alt="myImage" priority />
           </div>
         </div>
 
-        <div className={styles.centerImage}>
-          <Image src={myImage} alt="myImage" priority />
-          <div className={styles.experience}>
-            <div>
-              <p className={styles.number}>{experience}+</p>
-              <p>Years Of Experience</p>
-            </div>
-            <hr />
-            <div>
-              <p className={styles.number}>{project}+</p>
-              <p>Project Complete</p>
-            </div>
-            <hr />
-            <div>
-              <p className={styles.number}>{client}%</p>
-              <p>Client Satisfactions</p>
-            </div>
+        <div className={styles.experience}>
+          <div>
+            <p className={styles.number}>{experience}+</p>
+            <p>Years Of Experience</p>
+          </div>
+          <hr />
+          <div>
+            <p className={styles.number}>{project}+</p>
+            <p>Project Complete</p>
+          </div>
+          <hr />
+          <div>
+            <p className={styles.number}>{client}%</p>
+            <p>Client Satisfactions</p>
           </div>
         </div>
       </div>
@@ -206,7 +207,6 @@ export default function Home() {
               <div className={styles.myRole}>
                 <FontAwesomeIcon
                   icon={faLaptopCode}
-                  className={styles.image}
                   size="2xl"
                 />
                 <h4>Software Developer</h4>
@@ -519,11 +519,11 @@ export default function Home() {
         </div>
       </section>
 
-      {/* CONTACT SECTION */}
-      <ContactPage />
-
       {/* LATEST BLOG AND NEWS SECTION */}
       <LatestBlogAndNews />
+
+      {/* CONTACT SECTION */}
+      <ContactPage />
     </main>
   );
 }

@@ -21,7 +21,11 @@ const LatestBlogAndNews = () => {
           </h1>
 
           <div className="blogs">
-            <div className="blog">
+            <div
+              className="blog"
+              data-aos="fade-up"
+              data-aos-anchor-placement="bottom-bottom"
+            >
               <div className="image">
                 <Image src={blog1} alt="blog1" />
               </div>
@@ -41,7 +45,11 @@ const LatestBlogAndNews = () => {
                 </div>
               </div>
             </div>
-            <div className="blog">
+            <div
+              className="blog"
+              data-aos="fade-up"
+              data-aos-anchor-placement="bottom-bottom"
+            >
               <div className="image">
                 <Image src={blog2} alt="blog1" />
               </div>
@@ -61,7 +69,11 @@ const LatestBlogAndNews = () => {
                 </div>
               </div>
             </div>
-            <div className="blog">
+            <div
+              className="blog"
+              data-aos="fade-up"
+              data-aos-anchor-placement="bottom-bottom"
+            >
               <div className="image">
                 <Image src={blog2} alt="blog1" />
               </div>
@@ -81,7 +93,11 @@ const LatestBlogAndNews = () => {
                 </div>
               </div>
             </div>
-            <div className="blog">
+            <div
+              className="blog"
+              data-aos="fade-up"
+              data-aos-anchor-placement="bottom-bottom"
+            >
               <div className="image">
                 <Image src={blog1} alt="blog1" />
               </div>
@@ -101,7 +117,11 @@ const LatestBlogAndNews = () => {
                 </div>
               </div>
             </div>
-            <div className="blog">
+            <div
+              className="blog"
+              data-aos="fade-up"
+              data-aos-anchor-placement="bottom-bottom"
+            >
               <div className="image">
                 <Image src={blog2} alt="blog1" />
               </div>

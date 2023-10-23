@@ -16,7 +16,6 @@
         .blog {
             display: flex;
             width: calc((100% / 2) - 15px);
-            min-width: 650px;
             gap: 20px;
             background-color: #1F1F1F;
             padding: 10px;
@@ -78,6 +77,73 @@
                             color: black;
                         }
                     }
+                }
+            }
+        }
+    }
+
+    @media only screen and (max-width: 1330px) {
+        .blogs {
+            gap: 10px;
+
+            .blog {
+                gap: 5px;
+
+                a {
+                    font-size: 14px;
+                }
+
+                .date {
+                    a {
+                        font-size: 15px !important;
+                    }
+                }
+            }
+        }
+    }
+
+    @media only screen and (max-width: 1240px) {
+        .blogs {
+
+            .blog {
+                flex-direction: column;
+
+                .image {
+                    width: 100%;
+
+                    img {
+                        width: 100%;
+                        height: fit-content;
+                    }
+                }
+            }
+        }
+    }
+
+    @media only screen and (max-width: 768px) {
+        .blogs {
+
+            .blog {
+                width: 49%;
+            }
+        }
+    }
+
+    @media only screen and (max-width: 600px) {
+        .blogs {
+            flex-direction: column;
+
+            .blog {
+                width: 100%;
+            }
+        }
+    }
+
+    @media only screen and (max-width: 425px) {
+        .blogs {
+            .blog {
+                .blogName {
+                    font-size: 12px;
                 }
             }
         }

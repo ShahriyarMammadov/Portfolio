@@ -88,8 +88,8 @@ export default function Home() {
 
   return (
     <main className={styles.homePage}>
-      <div className={styles.firstSection} data-aos="flip-up">
-        <div className={styles.leftDescription}>
+      <div className={styles.firstSection}>
+        <div className={styles.leftDescription} data-aos="fade-up">
           <div className={styles.flexDiv}>
             <h2>Hello, i'm</h2>
             <h1>Shahriyar Mammadov</h1>
@@ -110,12 +110,12 @@ export default function Home() {
               </Link>
             </div>
           </div>
-          <div className={styles.centerImage}>
+          <div className={styles.centerImage} data-aos="zoom-in">
             <Image src={myImage} alt="myImage" priority />
           </div>
         </div>
 
-        <div className={styles.experience}>
+        <div className={styles.experience} data-aos="fade-left">
           <div>
             <p className={styles.number}>{experience}+</p>
             <p>Years Of Experience</p>
@@ -205,10 +205,7 @@ export default function Home() {
               </div>
 
               <div className={styles.myRole}>
-                <FontAwesomeIcon
-                  icon={faLaptopCode}
-                  size="2xl"
-                />
+                <FontAwesomeIcon icon={faLaptopCode} size="2xl" />
                 <h4>Software Developer</h4>
                 <FontAwesomeIcon icon={faArrowTrendUp} />
               </div>

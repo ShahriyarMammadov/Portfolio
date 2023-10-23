@@ -15,13 +15,12 @@ footer {
             line-height: 21, 6px;
         }
 
-
         .logo {
             display: flex;
             align-items: flex-start;
             flex-wrap: wrap;
             width: 60%;
-            gap: 17%;
+            gap: 15%;
 
             div {
                 a {
@@ -123,7 +122,6 @@ footer {
         }
 
         .address {
-
             .navigate {
                 padding: 40px 0;
 
@@ -145,6 +143,97 @@ footer {
                         width: 20px;
                         padding-right: 10px;
                     }
+                }
+            }
+        }
+    }
+
+    @media only screen and (max-width: 1242px) {
+        #footer {
+            .logo {
+                .quickLink {
+                    margin-top: 50px;
+                }
+            }
+        }
+    }
+
+    @media only screen and (max-width: 1000px) {
+        #footer {
+            padding: 0 15px;
+        }
+    }
+
+    @media only screen and (max-width: 930px) {
+        #footer {
+            .logo {
+                width: 100%;
+
+                .quickLink {
+                    padding: 0 !important;
+                    margin-top: 0;
+                }
+            }
+
+            .address {
+                width: 100%;
+                margin-top: 40px;
+            }
+        }
+    }
+
+    @media only screen and (max-width: 780px) {
+        #footer {
+            .logo {
+                width: 100%;
+
+                .quickLink {
+                    margin-top: 40px;
+                    width: 100%;
+
+                    nav {
+                        justify-content: flex-start;
+                        gap: 20px;
+                    }
+
+                    .mailSignUp {
+                        button {
+                            font-weight: 600;
+                            padding: 0 5px;
+                        }
+                    }
+                }
+            }
+
+            .address {
+                width: 100%;
+                margin-top: 40px;
+            }
+        }
+    }
+
+    @media only screen and (max-width: 460px) {
+        #footer {
+            .logo {
+                .quickLink {
+                    .mailSignUp {
+                        button {
+                            width: 100px;
+                            justify-content: center;
+                            padding: 0;
+                        }
+                    }
+
+                    nav {
+                        font-size: 14px;
+                        gap: 15px;
+                    }
+                }
+            }
+
+            .address{
+                div{
+                    font-size: 16px !important;
                 }
             }
         }

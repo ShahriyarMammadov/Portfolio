@@ -765,6 +765,7 @@
 
                     .skill {
                         width: calc((100% / 4) - 15px);
+                        min-width: 180px;
                         background-color: #1F1F1F;
                         padding: 10px;
                         border-radius: 20px;
@@ -807,6 +808,32 @@
                             border-radius: 20px;
                             padding: 10px 0;
                             transition: all 0.5s;
+                        }
+                    }
+                }
+            }
+
+            @media only screen and (max-width: 950px) {
+                flex-direction: column;
+
+                .left {
+                    width: 100%;
+                }
+
+                .rightSkills {
+                    width: 100%;
+
+                    .skills {
+                        justify-content: center;
+                    }
+                }
+            }
+
+            @media only screen and (max-width: 410px) {
+                .rightSkills {
+                    .skills {
+                        .skill {
+                            width: 100%;
                         }
                     }
                 }
@@ -878,7 +905,6 @@
                                 color: #1F1F1F;
                                 cursor: pointer;
                                 text-align: center;
-                                width: fit-content;
                                 width: 65px;
                                 border: 1px solid rgba(255, 255, 255, 0.35);
                                 transition: all 0.5s;
@@ -901,7 +927,8 @@
                     text-decoration: none;
                     background-color: #c9f31d;
                     border-radius: 15px;
-                    padding: 10px 20px;
+                    font-weight: 700;
+                    padding: 15px 20px;
                     transition: all 0.5s;
                     color: black;
 
@@ -915,6 +942,110 @@
                 &:hover {
                     svg {
                         transform: translateX(5px);
+                    }
+                }
+            }
+
+            @media only screen and (max-width: 1200px) {
+                .projects {
+                    .project {
+                        gap: 15px !important;
+                    }
+                }
+            }
+
+            @media only screen and (max-width: 1000px) {
+                .projects {
+                    .project {
+                        .image {
+                            width: 60%;
+
+                            img {
+                                width: 100%;
+                                height: fit-content;
+                            }
+                        }
+
+                        .projectDescription {
+                            a {
+                                font-size: 35px !important;
+                            }
+
+                            p {
+                                font-size: 14px !important;
+                            }
+                        }
+                    }
+                }
+            }
+
+            @media only screen and (max-width: 768px) {
+                .projects {
+                    .project {
+                        flex-direction: column;
+
+                        &:nth-child(even) {
+                            flex-direction: column-reverse;
+                        }
+
+                        .image {
+                            width: 100%;
+                        }
+
+                        .projectDescription {
+                            width: 100%;
+
+                            a {
+                                font-size: 30px !important;
+                            }
+
+                            p {
+                                font-size: 14px !important;
+                            }
+
+                            .icon {
+                                margin-top: 15px;
+
+                                a {
+                                    width: 50px;
+                                    padding: 0;
+
+                                    svg {
+                                        font-size: 20px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            @media only screen and (max-width: 425px) {
+                .projects {
+                    .project {
+                        .projectDescription {
+
+                            a {
+                                font-size: 25px !important;
+                            }
+
+                            p {
+                                font-size: 14px !important;
+                            }
+
+                            .icon {
+                                margin-top: 15px;
+
+                                a {
+                                    width: 50px;
+                                    padding: 0;
+
+                                    svg {
+                                        font-size: 20px;
+                                    }
+                                }
+                            }
+                        }
                     }
                 }
             }

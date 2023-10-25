@@ -16,6 +16,7 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import myImage from "../../public/myImage.png";
 import myImage1 from "../../public/myImage1.jpg";
+import myImage2 from "../../public/myImage2.jpg";
 import aboutMeAnimatedImage from "../../public/aboutMeAnimatedImage.png";
 import { useEffect, useState } from "react";
 import AOS from "aos";
@@ -210,7 +211,7 @@ export default function Home() {
                 <FontAwesomeIcon icon={faArrowTrendUp} />
               </div>
               <div className={styles.myName}>
-                <Image src={myImage} alt="Shahriyar" />
+                <Image src={myImage2} alt="Shahriyar" />
                 <h4>Shahriyar M.</h4>
                 <FontAwesomeIcon icon={faArrowTrendUp} />
               </div>

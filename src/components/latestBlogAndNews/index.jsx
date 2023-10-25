@@ -61,11 +61,7 @@ const LatestBlogAndNews = () => {
                 </div>
               </div>
             </div>
-            <div
-              className="blog"
-              data-aos="fade-up"
-              data-aos-anchor-placement="bottom-bottom"
-            >
+            <div className="blog" data-aos="fade-right">
               <div className="image">
                 <Image src={blog2} alt="blog1" />
               </div>
@@ -85,11 +81,7 @@ const LatestBlogAndNews = () => {
                 </div>
               </div>
             </div>
-            <div
-              className="blog"
-              data-aos="fade-up"
-              data-aos-anchor-placement="bottom-bottom"
-            >
+            <div className="blog" data-aos="fade-left">
               <div className="image">
                 <Image src={blog1} alt="blog1" />
               </div>
@@ -109,11 +101,7 @@ const LatestBlogAndNews = () => {
                 </div>
               </div>
             </div>
-            <div
-              className="blog"
-              data-aos="fade-up"
-              data-aos-anchor-placement="bottom-bottom"
-            >
+            <div className="blog" data-aos="fade-right">
               <div className="image">
                 <Image src={blog2} alt="blog1" />
               </div>

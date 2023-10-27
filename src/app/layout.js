@@ -27,6 +27,7 @@ export default function RootLayout({ children }) {
           href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,600&display=swap"
           rel="stylesheet"
         ></link>
+        <meta name="theme-color" content="#c9f31d" />
       </Head>
       <body className={inter.className}>
         <Header />

@@ -228,12 +228,12 @@ export default function Home() {
               <FontAwesomeIcon icon={faAsterisk} className={styles.logo} />
             </div>
 
-            <div className={styles.right} data-aos="zoom-out-left">
-              <div className={styles.sectionName}>
+            <div className={styles.right}>
+              <div className={styles.sectionName} data-aos="zoom-out-right">
                 <h5>My Resume</h5>
               </div>
 
-              <div className="headText">
+              <div className="headText" data-aos="zoom-out-left">
                 <h1>
                   Real <span>Problem Solutions</span> <br />
                   Experience
@@ -242,7 +242,7 @@ export default function Home() {
 
               <div className={styles.resumeCard}>
                 <div>
-                  <div className={styles.card}>
+                  <div className={styles.card} data-aos="fade-up-right">
                     <div className={styles.icon}>
                       <FontAwesomeIcon icon={faLocationArrow} />
                     </div>
@@ -252,7 +252,7 @@ export default function Home() {
                       <p>Google</p>
                     </div>
                   </div>
-                  <div className={styles.card}>
+                  <div className={styles.card} data-aos="fade-up-left">
                     <div className={styles.icon}>
                       <FontAwesomeIcon icon={faLocationArrow} />
                     </div>
@@ -265,7 +265,7 @@ export default function Home() {
                 </div>
                 <hr />
                 <div>
-                  <div className={styles.card}>
+                  <div className={styles.card} data-aos="fade-up-right">
                     <div className={styles.icon}>
                       <FontAwesomeIcon icon={faLocationArrow} />
                     </div>
@@ -275,7 +275,7 @@ export default function Home() {
                       <p>Google</p>
                     </div>
                   </div>
-                  <div className={styles.card}>
+                  <div className={styles.card} data-aos="fade-up-left">
                     <div className={styles.icon}>
                       <FontAwesomeIcon icon={faLocationArrow} />
                     </div>
@@ -353,11 +353,11 @@ export default function Home() {
       {/* MY SKILLS */}
       <section className={styles.mySkills}>
         <div className={styles.container}>
-          <div className={styles.left} data-aos="fade-down-right">
-            <div className={styles.sectionName}>
+          <div className={styles.left}>
+            <div className={styles.sectionName} data-aos="fade-down-right">
               <h5>My Skills</h5>
             </div>
-            <div className="headText">
+            <div className="headText" data-aos="fade-down-right">
               <h1>
                 Let’s Explore Popular <span>Skills & Experience</span>
               </h1>
@@ -370,8 +370,8 @@ export default function Home() {
             </div>
           </div>
 
-          <div className={styles.rightSkills}>
-            <div className={styles.skills} data-aos="fade-down-left">
+          <div className={styles.rightSkills} data-aos="flip-up">
+            <div className={styles.skills}>
               <div className={styles.skill}>
                 <div className={styles.skillLogo}>
                   <Image src={html} alt="HTML" />

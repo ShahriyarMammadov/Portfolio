@@ -1,4 +1,42 @@
 #contactPage {
     background-color: #131313;
     font-family: 'DM Sans', sans-serif;
+    padding-bottom: 40px;
+    overflow: hidden;
+
+    .paddingContainer {
+        padding: 50px 80px;
+
+        h1 {
+            color: white;
+            font-size: 40px;
+            font-weight: 600;
+            line-height: 54px;
+
+            span {
+                color: #c9f31d;
+            }
+        }
+
+        p {
+            color: rgba(255, 255, 255, 0.35);
+        }
+
+        h5 {
+            color: rgba(255, 255, 255, 0.65);
+            font-size: 16px;
+        }
+    }
+
+    @media only screen and (max-width: 768px) {
+        .paddingContainer {
+            padding: 50px 15px;
+        }
+    }
+
+    @media only screen and (max-width: 500px) {
+        .paddingContainer {
+            padding: 0px 15px;
+        }
+    }
 }

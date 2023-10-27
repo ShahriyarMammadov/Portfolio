@@ -1,8 +1,10 @@
+"use client";
 import React from "react";
 import "./index.scss";
 import PageNameAndBreadcrumbComponent from "@/components/pageName";
+import ContactPage from "../../components/contact";
 
-const ContactPage = () => {
+const Contact = () => {
   return (
     <div id="contactPage">
       <div className="container">
@@ -11,9 +13,12 @@ const ContactPage = () => {
             data={{ pageName: "Contact Us", breadcrumb: "Contact Us" }}
           />
         </div>
+        <div className="paddingContainer">
+          <ContactPage />
+        </div>
       </div>
     </div>
   );
 };
 
-export default ContactPage;
+export default Contact;

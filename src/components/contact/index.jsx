@@ -54,8 +54,8 @@ const ContactPage = () => {
 
         <div className="rightInputs">
           <form action="">
-            <div className="formDiv" data-aos="flip-up">
-              <div>
+            <div className="formDiv">
+              <div data-aos="fade-right">
                 <label htmlFor="fullName">Full Name</label>
                 <Input
                   id="fullName"
@@ -64,7 +64,7 @@ const ContactPage = () => {
                   prefix={<UserOutlined />}
                 />
               </div>
-              <div>
+              <div data-aos="fade-left">
                 <label htmlFor="email">Email Address</label>
                 <Input
                   id="email"
@@ -74,8 +74,8 @@ const ContactPage = () => {
                 />
               </div>
             </div>
-            <div className="formDiv" data-aos="flip-up">
-              <div>
+            <div className="formDiv">
+              <div data-aos="fade-right">
                 <label htmlFor="phoneNumber">Phone Number</label>
                 <Input
                   id="phoneNumber"
@@ -84,7 +84,7 @@ const ContactPage = () => {
                   prefix={<PhoneOutlined />}
                 />
               </div>
-              <div>
+              <div data-aos="fade-left">
                 <label htmlFor="subject">Subject</label>
                 <Input
                   id="subject"

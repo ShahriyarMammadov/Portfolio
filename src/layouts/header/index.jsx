@@ -59,27 +59,27 @@ const Header = () => {
             <span></span>
           </div>
           <div>
-            <Link href={"/about"}>About</Link>
+            <Link href={"/#aboutMe"}>About</Link>
             <span></span>
           </div>
           <div>
-            <Link href={"/resume"}>Resume</Link>
+            <Link href={"/#resume"}>Resume</Link>
             <span></span>
           </div>
           <div>
-            <Link href={"/services"}>Services</Link>
+            <Link href={"/#popularService"}>Services</Link>
             <span></span>
           </div>
           <div>
-            <Link href={"/skills"}>Skills</Link>
+            <Link href={"/#skills"}>Skills</Link>
             <span></span>
           </div>
           <div>
-            <Link href={"/projects"}>Projects</Link>
+            <Link href={"/#latestWorks"}>Projects</Link>
             <span></span>
           </div>
           <div>
-            <Link href={"/blog"}>Blog</Link>
+            <Link href={"/#latestBlogAndNewsPage"}>Blog</Link>
             <span></span>
           </div>
           <div>

@@ -135,7 +135,7 @@ export default function Home() {
       </div>
 
       {/* ABOUT ME */}
-      <section className={styles.aboutMeSection}>
+      <section className={styles.aboutMeSection} id="aboutMe">
         <div className={styles.container}>
           <div className={styles.sectionName}>
             <h5>About Me</h5>
@@ -221,7 +221,7 @@ export default function Home() {
       </section>
 
       {/* MY RESUME */}
-      <section className={styles.myResumeSection}>
+      <section className={styles.myResumeSection} id="resume">
         <div className={styles.container}>
           <div className={styles.flex}>
             <div className={styles.leftLogo} data-aos="zoom-out-right">
@@ -293,7 +293,7 @@ export default function Home() {
       </section>
 
       {/* POPULAR SERVICES */}
-      <section className={styles.popularServicesSection}>
+      <section className={styles.popularServicesSection} id="popularService">
         <div className={styles.container}>
           <div className={styles.sectionName}>
             <h5>Popular Services</h5>
@@ -351,7 +351,7 @@ export default function Home() {
       </section>
 
       {/* MY SKILLS */}
-      <section className={styles.mySkills}>
+      <section className={styles.mySkills} id="skills">
         <div className={styles.container}>
           <div className={styles.left}>
             <div className={styles.sectionName} data-aos="fade-down-right">
@@ -457,7 +457,7 @@ export default function Home() {
       </section>
 
       {/* LATEST WORKS */}
-      <section className={styles.latestWorksSection}>
+      <section className={styles.latestWorksSection} id="latestWorks">
         <div className={styles.container}>
           <div className={styles.sectionName}>
             <h5>Latest Works</h5>

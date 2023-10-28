@@ -120,10 +120,10 @@ const Header = () => {
         style={{
           backgroundColor: "#131313",
         }}
-        // extra={}
       >
         <Link
-          href={"/about"}
+          href={"/#about"}
+          onClick={onClose}
           style={{
             color: "#C9F31D",
             fontWeight: "700",
@@ -134,7 +134,8 @@ const Header = () => {
           About
         </Link>
         <Link
-          href={"/resume"}
+          href={"/#resume"}
+          onClick={onClose}
           style={{
             color: "#C9F31D",
             padding: "20px 0",
@@ -146,7 +147,8 @@ const Header = () => {
           Resume
         </Link>
         <Link
-          href={"/services"}
+          href={"/#popularService"}
+          onClick={onClose}
           style={{
             color: "#C9F31D",
             fontWeight: "700",
@@ -157,7 +159,8 @@ const Header = () => {
           Services
         </Link>
         <Link
-          href={"/skills"}
+          href={"/#skills"}
+          onClick={onClose}
           style={{
             color: "#C9F31D",
             padding: "20px 0",
@@ -169,7 +172,8 @@ const Header = () => {
           Skills
         </Link>
         <Link
-          href={"/projects"}
+          href={"/#latestWorks"}
+          onClick={onClose}
           style={{
             color: "#C9F31D",
             fontWeight: "700",
@@ -180,7 +184,8 @@ const Header = () => {
           Projects
         </Link>
         <Link
-          href={"/blog"}
+          href={"/#latestBlogAndNewsPage"}
+          onClick={onClose}
           style={{
             color: "#C9F31D",
             fontWeight: "700",
@@ -193,6 +198,7 @@ const Header = () => {
         </Link>
         <Link
           href={"/contact"}
+          onClick={onClose}
           style={{
             color: "#C9F31D",
             fontWeight: "700",

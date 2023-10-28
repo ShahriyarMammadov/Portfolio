@@ -12,8 +12,19 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
   title: "Shahriyar Mammadov",
-  description: "Shahriyar Mammadov's Personal Portfolio",
+  description:
+    "Şəhriyar Məmmədovun Portfoliosu | Shahriyar Mammadov's Portfolio",
   themeColor: "#c9f31d",
+  keywords: [
+    "Şəhriyar Məmmədov",
+    "Shahriyar Mammadov",
+    "websayt xidmetleri",
+    "Portfolio",
+    "vebsaytlarin hazirlanmasi",
+    "website",
+    "create website",
+    "sayt hazirlanmasi",
+  ],
 };
 
 export default function RootLayout({ children }) {

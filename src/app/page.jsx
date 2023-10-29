@@ -33,6 +33,7 @@ import project1 from "../../public/project1.jpg";
 import project2 from "../../public/project2.jpg";
 import ContactPage from "@/components/contact";
 import LatestBlogAndNews from "@/components/latestBlogAndNews";
+// import cv from "../../public/cv.pdf";
 
 export default function Home() {
   useEffect(() => {
@@ -105,10 +106,10 @@ export default function Home() {
               <button>
                 Hire Me <FontAwesomeIcon icon={faAngleRight} />
               </button>
-              <Link href="#">
+              <a href="../../public/cv.pdf" download>
                 Download Resume
                 <FontAwesomeIcon icon={faAngleRight} />
-              </Link>
+              </a>
             </div>
           </div>
           <div className={styles.centerImage} data-aos="zoom-in">

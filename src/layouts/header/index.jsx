@@ -6,11 +6,15 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAsterisk, faBarsStaggered } from "@fortawesome/free-solid-svg-icons";
 import { Button, Drawer, Input, message } from "antd";
 import TextArea from "antd/es/input/TextArea";
+import emailjs from "@emailjs/browser";
 
 const Header = () => {
   const [scrolled, setScrolled] = useState(false);
   const [toggle, setToggle] = useState(false);
   const [open, setOpen] = useState(false);
+  const [messageText, setMessageText] = useState("");
+  const [fullName, setFullName] = useState("");
+  const [emailAddress, setEmail] = useState("");
 
   useEffect(() => {
     const handleScroll = () => {
@@ -36,12 +40,35 @@ const Header = () => {
     setOpen(false);
   };
 
-  const onFinish = () => {
-    message.success("Submit success!");
+  var templateParams = {
+    fullName: fullName,
+    emailAddress: emailAddress,
+    message: messageText,
   };
 
-  const onFinishFailed = () => {
-    message.error("Submit failed!");
+  const handleSendMessage = (e) => {
+    try {
+      e.preventDefault();
+      emailjs
+        .send(
+          "service_8545699",
+          "template_dbol2me",
+          templateParams,
+          "yBlJtI3RX3LO5fbXF"
+        )
+        .then(
+          function (response) {
+            console.log("SUCCESS!", response.status, response.text);
+            message.success("Thank You 😘");
+          },
+          function (error) {
+            console.log("FAILED...", error);
+            message.error(error);
+          }
+        );
+    } catch (error) {
+      console.log(error);
+    }
   };
 
   return (
@@ -230,6 +257,9 @@ const Header = () => {
             color: "rgba(255, 255, 255, 0.65)",
             fontWeight: "600",
           }}
+          onChange={(e) => {
+            setFullName(e.target.value);
+          }}
         />
         <Input
           placeholder="Email Address"
@@ -237,6 +267,9 @@ const Header = () => {
             backgroundColor: "#1f1f1f",
             color: "rgba(255, 255, 255, 0.65)",
             fontWeight: "600",
+          }}
+          onChange={(e) => {
+            setEmail(e.target.value);
           }}
         />
         <TextArea
@@ -251,8 +284,18 @@ const Header = () => {
             minRows: 3,
             maxRows: 5,
           }}
+          onChange={(e) => {
+            setMessageText(e.target.value);
+          }}
         />
-        <Button type="dashed">Submit</Button>
+        <Button
+          type="dashed"
+          onClick={(e) => {
+            handleSendMessage(e);
+          }}
+        >
+          Submit
+        </Button>
       </Drawer>
     </header>
   );

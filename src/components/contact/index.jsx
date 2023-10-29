@@ -11,10 +11,49 @@ import {
 import { Input } from "antd";
 import { faCheck, faChevronRight } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import emailjs from "@emailjs/browser";
+import { message } from "antd";
 
 const ContactPage = () => {
   const { TextArea } = Input;
-  const [message, setMessage] = useState("");
+  const [messageText, setMessage] = useState("");
+  const [fullName, setFullName] = useState("");
+  const [emailAddress, setEmailAddress] = useState("");
+  const [phoneNumber, setPhoneNumber] = useState("");
+  const [subject, setSubject] = useState("");
+
+  var templateParams = {
+    fullName: fullName,
+    emailAddress: emailAddress,
+    phoneNumber: phoneNumber,
+    subject: subject,
+    message: messageText,
+  };
+
+  const handleSendMessage = (e) => {
+    try {
+      e.preventDefault();
+      emailjs
+        .send(
+          "service_8545699",
+          "template_dbol2me",
+          templateParams,
+          "yBlJtI3RX3LO5fbXF"
+        )
+        .then(
+          function (response) {
+            console.log("SUCCESS!", response.status, response.text);
+            message.success("Thank You 😘");
+          },
+          function (error) {
+            console.log("FAILED...", error);
+            message.error(error);
+          }
+        );
+    } catch (error) {
+      console.log(error);
+    }
+  };
 
   return (
     <div id="contactPage">
@@ -62,6 +101,9 @@ const ContactPage = () => {
                   size="large"
                   placeholder="Your Full Name"
                   prefix={<UserOutlined />}
+                  onChange={(e) => {
+                    setFullName(e.target.value);
+                  }}
                 />
               </div>
               <div data-aos="fade-left">
@@ -71,6 +113,9 @@ const ContactPage = () => {
                   size="large"
                   placeholder="support@gmail.com"
                   prefix={<MailOutlined />}
+                  onChange={(e) => {
+                    setEmailAddress(e.target.value);
+                  }}
                 />
               </div>
             </div>
@@ -82,6 +127,9 @@ const ContactPage = () => {
                   size="large"
                   placeholder="Your Phone Number"
                   prefix={<PhoneOutlined />}
+                  onChange={(e) => {
+                    setPhoneNumber(e.target.value);
+                  }}
                 />
               </div>
               <div data-aos="fade-left">
@@ -91,6 +139,9 @@ const ContactPage = () => {
                   size="large"
                   placeholder="Subject"
                   prefix={<PaperClipOutlined />}
+                  onChange={(e) => {
+                    setSubject(e.target.value);
+                  }}
                 />
               </div>
             </div>
@@ -99,7 +150,7 @@ const ContactPage = () => {
               <label htmlFor="message">Message</label>
               <TextArea
                 id="message"
-                value={message}
+                value={messageText}
                 onChange={(e) => setMessage(e.target.value)}
                 placeholder="Write Message"
                 allowClear
@@ -112,7 +163,11 @@ const ContactPage = () => {
               />
             </div>
 
-            <button>
+            <button
+              onClick={(e) => {
+                handleSendMessage(e);
+              }}
+            >
               Send Us Message <FontAwesomeIcon icon={faChevronRight} />
             </button>
           </form>

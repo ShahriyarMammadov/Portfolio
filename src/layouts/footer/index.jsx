@@ -70,10 +70,10 @@ const Footer = () => {
           <div className="quickLink">
             <h4>Quick Link</h4>
             <nav>
-              <Link href={"/service"}>Service</Link>
-              <Link href={"/projects"}>Projects</Link>
-              <Link href={"/pricing"}>Pricing</Link>
-              <Link href={"/fags"}>Fags</Link>
+              <Link href={"/#service"}>Service</Link>
+              <Link href={"#popularService"}>Projects</Link>
+              <Link href={"/#resume"}>Resume</Link>
+              <Link href={"/#about"}>About</Link>
               <Link href={"/contact"}>Contact</Link>
             </nav>
 

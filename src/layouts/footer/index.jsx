@@ -9,6 +9,7 @@ import {
   faEnvelope,
   faAsterisk,
   faPhone,
+  faHackerrank,
 } from "@fortawesome/free-solid-svg-icons";
 import {
   FacebookOutlined,
@@ -92,7 +93,7 @@ const Footer = () => {
           <div className="navigate">
             <div>
               <FontAwesomeIcon icon={faLocationDot} />
-              <span>55 Main Street, 2nd block, New York City</span>
+              <span>Azerbaijan, Baku, Khazar District</span>
             </div>
             <div>
               <FontAwesomeIcon icon={faEnvelope} />

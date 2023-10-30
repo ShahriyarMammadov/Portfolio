@@ -853,6 +853,14 @@
             .projects {
                 padding-top: 40px;
 
+                .image {
+                    width: 50%;
+                    img {
+                        width: 100%;
+                        height: fit-content;
+                    }
+                }
+
                 .project {
                     display: flex;
                     align-items: center;

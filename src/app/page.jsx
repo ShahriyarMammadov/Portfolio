@@ -29,11 +29,13 @@ import nextjs from "../../public/skills/nextjs.svg";
 import nodejs from "../../public/skills/nodejs.svg";
 import react from "../../public/skills/react.svg";
 import express from "../../public/skills/express.svg";
-import project1 from "../../public/project1.jpg";
-import project2 from "../../public/project2.jpg";
+import project1 from "../../public/project1.png";
+import project2 from "../../public/project2.png";
+import project3 from "../../public/project3.png";
+import project4 from "../../public/project4.png";
+import project5 from "../../public/project5.png";
 import ContactPage from "@/components/contact";
 import LatestBlogAndNews from "@/components/latestBlogAndNews";
-// import cv from "../../public/cv.pdf";
 
 export default function Home() {
   useEffect(() => {
@@ -113,7 +115,7 @@ export default function Home() {
             </div>
           </div>
           <div className={styles.centerImage} data-aos="zoom-in">
-            <Image src={myImage} alt="myImage" priority />
+            <Image src={myImage} alt="Shahriyar Mammadov" priority />
           </div>
         </div>
 
@@ -199,7 +201,7 @@ export default function Home() {
             <div className={styles.right} data-aos="fade-up-left">
               <Image
                 src={aboutMeAnimatedImage}
-                alt="anime"
+                alt="css animation"
                 className={styles.animatedImage}
               />
               <div className={styles.image}>
@@ -472,49 +474,156 @@ export default function Home() {
           <div className={styles.projects}>
             <div className={styles.project}>
               <div className={styles.image} data-aos="fade-right">
-                <Image src={project1} alt="Project 1" />
+                <Image src={project1} alt="veb sehife hazirlanmasi" />
               </div>
               <div className={styles.projectDescription} data-aos="fade-left">
-                <b>FullStack Builder</b>
-                <Link href={"/projectDetail"}>WebSite Builder</Link>
+                <b>FullStack is Developed</b>
+                <a
+                  href={"https://udpo.az"}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  UDPO.az
+                </a>
                 <p>
-                  Sed ut perspiciatis unde omnin natus totam rem aperiam eaque
-                  inventore veritatis architecto beatae
+                  The UDPO.az website is an organization that supports people
+                  with disabilities.
                 </p>
 
                 <div className={styles.icon}>
-                  <Link href={"/projectDetail"}>
+                  <a
+                    href={"https://udpo.az"}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     <FontAwesomeIcon icon={faLocationArrow} />
-                  </Link>
+                  </a>
                 </div>
               </div>
             </div>
+
             <div className={styles.project}>
               <div className={styles.projectDescription} data-aos="fade-right">
-                <b>FullStack Builder</b>
-                <Link href={"/projectDetail"}>WebSite Builder</Link>
+                <b>FullStack is Developed</b>
+                <a
+                  href={"https://armarium.az"}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Armarium.az
+                </a>
                 <p>
-                  Sed ut perspiciatis unde omnin natus totam rem aperiam eaque
-                  inventore veritatis architecto beatae
+                  The Armarium.az website allows you to choose a range of
+                  furniture that suits your taste.
                 </p>
 
                 <div className={styles.icon}>
-                  <Link href={"/projectDetail"}>
+                  <a
+                    href={"https://armarium.az"}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     <FontAwesomeIcon icon={faLocationArrow} />
-                  </Link>
+                  </a>
                 </div>
               </div>
               <div className={styles.image} data-aos="fade-left">
-                <Image src={project2} alt="Project 2" />
+                <Image src={project2} alt="veb sehife hazirlanmasi" />
+              </div>
+            </div>
+
+            <div className={styles.project}>
+              <div className={styles.image} data-aos="fade-right">
+                <Image src={project3} alt="veb sehife hazirlanmasi" />
+              </div>
+              <div className={styles.projectDescription} data-aos="fade-left">
+                <b>FrontEnd</b>
+                <a
+                  href={"https://shortenerurlapp.netlify.app/"}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  URL Shortener
+                </a>
+                <p>A handy web page for shortening long links</p>
+
+                <div className={styles.icon}>
+                  <a
+                    href={"https://shortenerurlapp.netlify.app/"}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <FontAwesomeIcon icon={faLocationArrow} />
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div className={styles.project}>
+              <div className={styles.projectDescription} data-aos="fade-right">
+                <b>Front End</b>
+                <a
+                  href={"https://weathernext.netlify.app/"}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Weather App
+                </a>
+                <p>
+                  A web page showing daily, weekly and hourly weather forecast
+                </p>
+
+                <div className={styles.icon}>
+                  <a
+                    href={"https://weathernext.netlify.app/"}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <FontAwesomeIcon icon={faLocationArrow} />
+                  </a>
+                </div>
+              </div>
+              <div className={styles.image} data-aos="fade-left">
+                <Image src={project4} alt="veb sehife hazirlanmasi" />
+              </div>
+            </div>
+
+            <div className={styles.project}>
+              <div className={styles.image} data-aos="fade-right">
+                <Image src={project5} alt="veb sehife hazirlanmasi" />
+              </div>
+              <div className={styles.projectDescription} data-aos="fade-left">
+                <b>FullStack is Developed</b>
+                <a
+                  href={"https://light-folio.netlify.app/"}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  LightFolio.com
+                </a>
+                <p>
+                  This webpage is an online photo gallery system I developed
+                  during my final project at code academy.
+                </p>
+
+                <div className={styles.icon}>
+                  <a
+                    href={"https://light-folio.netlify.app/"}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <FontAwesomeIcon icon={faLocationArrow} />
+                  </a>
+                </div>
               </div>
             </div>
           </div>
 
-          <div className={styles.viewMoreButton}>
+          {/* <div className={styles.viewMoreButton}>
             <Link href={"/allProjects"} className={styles.btn}>
               View More Projects <FontAwesomeIcon icon={faAngleRight} />
             </Link>
-          </div>
+          </div> */}
         </div>
       </section>
 

@@ -26,7 +26,7 @@ const LatestBlogAndNews = () => {
                 <Image src={frontEnd} alt="front end" />
               </div>
             </div>
-            <div className="blog" data-aos="fade-right">
+            <div className="blog" data-aos="fade-left">
               <div className="image">
                 <Image src={softwareengineer} alt="software engineer" />
               </div>
@@ -36,7 +36,7 @@ const LatestBlogAndNews = () => {
                 <Image src={javascript} alt="javascript" />
               </div>
             </div>
-            <div className="blog" data-aos="fade-right">
+            <div className="blog" data-aos="fade-left">
               <div className="image">
                 <Image src={problemsolving} alt="problem solving" />
               </div>

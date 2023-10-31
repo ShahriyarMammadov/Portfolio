@@ -250,9 +250,9 @@ export default function Home() {
                       <FontAwesomeIcon icon={faLocationArrow} />
                     </div>
                     <div className={styles.name}>
-                      <p>2021 - Present</p>
+                      <p>2023/07 - Present</p>
                       <h3>Full Stack Web Developer</h3>
-                      <p>Google</p>
+                      <p>Allvan Agency</p>
                     </div>
                   </div>
                   <div className={styles.card} data-aos="fade-up-left">
@@ -260,9 +260,9 @@ export default function Home() {
                       <FontAwesomeIcon icon={faLocationArrow} />
                     </div>
                     <div className={styles.name}>
-                      <p>2021 - Present</p>
-                      <h3>Full Stack Web Developer</h3>
-                      <p>Google</p>
+                      <p>2023/02 - 2023/07</p>
+                      <h3>FreeLancer (Developer)</h3>
+                      <p>UpWork</p>
                     </div>
                   </div>
                 </div>
@@ -273,9 +273,9 @@ export default function Home() {
                       <FontAwesomeIcon icon={faLocationArrow} />
                     </div>
                     <div className={styles.name}>
-                      <p>2021 - Present</p>
+                      <p>2023/02 - 2023/07</p>
                       <h3>Full Stack Web Developer</h3>
-                      <p>Google</p>
+                      <p>Several Startups</p>
                     </div>
                   </div>
                   <div className={styles.card} data-aos="fade-up-left">
@@ -283,9 +283,9 @@ export default function Home() {
                       <FontAwesomeIcon icon={faLocationArrow} />
                     </div>
                     <div className={styles.name}>
-                      <p>2021 - Present</p>
-                      <h3>Full Stack Web Developer</h3>
-                      <p>Google</p>
+                      <p>2022/09 - 2023/02</p>
+                      <h3>Software Development</h3>
+                      <p>Code Academy</p>
                     </div>
                   </div>
                 </div>
@@ -312,8 +312,8 @@ export default function Home() {
             <div className={styles.card} data-aos="zoom-out-right">
               <div className={styles.number}>01.</div>
               <div className={styles.serviceName}>
-                <h2>Brand Identity Design</h2>
-                <p>Dignissimos ducimus blanditiis praesen</p>
+                <h2>Creating Web Pages</h2>
+                <p>Full Development of Web Pages</p>
               </div>
               <div className={styles.icon}>
                 <FontAwesomeIcon icon={faLocationArrow} />
@@ -322,8 +322,8 @@ export default function Home() {
             <div className={styles.card} data-aos="zoom-out-left">
               <div className={styles.number}>02.</div>
               <div className={styles.serviceName}>
-                <h2>Brand Identity Design</h2>
-                <p>Dignissimos ducimus blanditiis praesen</p>
+                <h2>SEO</h2>
+                <p>Provision of SEO Services</p>
               </div>
               <div className={styles.icon}>
                 <FontAwesomeIcon icon={faLocationArrow} />
@@ -332,8 +332,8 @@ export default function Home() {
             <div className={styles.card} data-aos="zoom-out-right">
               <div className={styles.number}>03.</div>
               <div className={styles.serviceName}>
-                <h2>Brand Identity Design</h2>
-                <p>Dignissimos ducimus blanditiis praesen</p>
+                <h2>Error Handling</h2>
+                <p>Detection of Any Errors</p>
               </div>
               <div className={styles.icon}>
                 <FontAwesomeIcon icon={faLocationArrow} />
@@ -342,8 +342,8 @@ export default function Home() {
             <div className={styles.card} data-aos="zoom-out-left">
               <div className={styles.number}>04.</div>
               <div className={styles.serviceName}>
-                <h2>Brand Identity Design</h2>
-                <p>Dignissimos ducimus blanditiis praesen</p>
+                <h2>Web Page Development</h2>
+                <p>Any Type of Web Page Development</p>
               </div>
               <div className={styles.icon}>
                 <FontAwesomeIcon icon={faLocationArrow} />

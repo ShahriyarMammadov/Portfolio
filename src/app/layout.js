@@ -7,6 +7,7 @@ import { config } from "@fortawesome/fontawesome-svg-core";
 import Head from "next/head";
 import { Analytics } from "@vercel/analytics/react";
 import { SpeedInsights } from "@vercel/speed-insights/next";
+import SnowfallComponent from "@/components/snowfall";
 config.autoAddCss = false;
 
 const inter = Inter({ subsets: ["latin"] });
@@ -40,16 +41,11 @@ export default function RootLayout({ children }) {
           href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,600&display=swap"
           rel="stylesheet"
         ></link>
-        {/* GOOGLE ADSENSE */}
-        <script
-          async
-          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2651137106510803"
-          crossorigin="anonymous"
-        ></script>
       </Head>
       <body className={inter.className}>
         <Header />
         {children}
+        <SnowfallComponent />
         <SpeedInsights />
         <Analytics />
         <Footer />

@@ -7,6 +7,10 @@ import { faAsterisk, faBarsStaggered } from "@fortawesome/free-solid-svg-icons";
 import { Button, Drawer, Input, message } from "antd";
 import TextArea from "antd/es/input/TextArea";
 import emailjs from "@emailjs/browser";
+import {
+  faChevronRight,
+  faPaperPlane,
+} from "@fortawesome/free-solid-svg-icons";
 
 const Header = () => {
   const [scrolled, setScrolled] = useState(false);
@@ -15,6 +19,11 @@ const Header = () => {
   const [messageText, setMessageText] = useState("");
   const [fullName, setFullName] = useState("");
   const [emailAddress, setEmail] = useState("");
+  const [endMessage, setEndMessage] = useState(false);
+
+  const [loading, setLoading] = useState(false);
+
+  const [messageApi, contextHolder] = message.useMessage();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -46,34 +55,55 @@ const Header = () => {
     message: messageText,
   };
 
-  const handleSendMessage = (e) => {
+  const handleSendMessage = async (e) => {
+    e.preventDefault();
+
     try {
-      e.preventDefault();
-      emailjs
-        .send(
-          "service_8545699",
-          "template_dbol2me",
-          templateParams,
-          "yBlJtI3RX3LO5fbXF"
-        )
-        .then(
-          function (response) {
-            console.log("SUCCESS!", response.status, response.text);
-            message.success("Thank You 😘");
-          },
-          function (error) {
-            console.log("FAILED...", error);
-            message.error(error);
-          }
-        );
+      if (
+        fullName.length < 2 ||
+        messageText.length < 4 ||
+        emailAddress.length < 10
+      ) {
+        messageApi.open({
+          type: "error",
+          content: "Please Fill in The Boxes Completely",
+        });
+      } else {
+        setLoading(true);
+
+        emailjs
+          .send(
+            "service_8545699",
+            "template_dbol2me",
+            templateParams,
+            "yBlJtI3RX3LO5fbXF"
+          )
+          .then(
+            function (response) {
+              console.log("SUCCESS!", response.status, response.text);
+              message.success(
+                "Thank you, I will get back to you as soon as possible 😘"
+              );
+              setLoading(false);
+              setEndMessage(true);
+            },
+            function (error) {
+              console.log("FAILED...", error);
+              message.error(error);
+              setLoading(false);
+            }
+          );
+      }
     } catch (error) {
       console.log(error);
+      setLoading(false);
     }
   };
 
   return (
     <header className={scrolled ? "scrolled" : ""}>
       <div className={"container"}>
+        {contextHolder}
         <div className="logo">
           <Link href={"/"}>
             <FontAwesomeIcon icon={faAsterisk} />
@@ -293,8 +323,20 @@ const Header = () => {
           onClick={(e) => {
             handleSendMessage(e);
           }}
+          disabled={endMessage || loading}
+          style={{ color: "white" }}
         >
-          Submit
+          {loading ? (
+            <>
+              Sending... <FontAwesomeIcon icon={faPaperPlane} />
+            </>
+          ) : endMessage ? (
+            "Thank You 😘"
+          ) : (
+            <>
+              Send <FontAwesomeIcon icon={faChevronRight} />
+            </>
+          )}
         </Button>
       </Drawer>
     </header>

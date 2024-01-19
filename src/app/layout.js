@@ -45,7 +45,7 @@ export default function RootLayout({ children }) {
       <body className={inter.className}>
         <Header />
         {children}
-        <SnowfallComponent />
+        {/* <SnowfallComponent /> */}
         <SpeedInsights />
         <Analytics />
         <Footer />

@@ -8,11 +8,14 @@ import {
   PhoneOutlined,
   PaperClipOutlined,
 } from "@ant-design/icons";
-import { Input } from "antd";
-import { faCheck, faChevronRight } from "@fortawesome/free-solid-svg-icons";
+import { Input, message } from "antd";
+import {
+  faCheck,
+  faChevronRight,
+  faPaperPlane,
+} from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import emailjs from "@emailjs/browser";
-import { message } from "antd";
 
 const ContactPage = () => {
   const { TextArea } = Input;
@@ -22,6 +25,12 @@ const ContactPage = () => {
   const [phoneNumber, setPhoneNumber] = useState("");
   const [subject, setSubject] = useState("");
 
+  const [loading, setLoading] = useState(false);
+
+  const [endMessage, setEndMessage] = useState(false);
+
+  const [messageApi, contextHolder] = message.useMessage();
+
   var templateParams = {
     fullName: fullName,
     emailAddress: emailAddress,
@@ -30,34 +39,55 @@ const ContactPage = () => {
     message: messageText,
   };
 
-  const handleSendMessage = (e) => {
+  const handleSendMessage = async (e) => {
+    e.preventDefault();
+
     try {
-      e.preventDefault();
-      emailjs
-        .send(
-          "service_8545699",
-          "template_dbol2me",
-          templateParams,
-          "yBlJtI3RX3LO5fbXF"
-        )
-        .then(
-          function (response) {
-            console.log("SUCCESS!", response.status, response.text);
-            message.success("Thank You 😘");
-          },
-          function (error) {
-            console.log("FAILED...", error);
-            message.error(error);
-          }
-        );
+      if (
+        fullName.length < 2 ||
+        messageText.length < 4 ||
+        emailAddress.length < 10
+      ) {
+        messageApi.open({
+          type: "error",
+          content: "Please Fill in The Boxes Completely",
+        });
+      } else {
+        setLoading(true);
+
+        emailjs
+          .send(
+            "service_8545699",
+            "template_dbol2me",
+            templateParams,
+            "yBlJtI3RX3LO5fbXF"
+          )
+          .then(
+            function (response) {
+              console.log("SUCCESS!", response.status, response.text);
+              message.success(
+                "Thank you, I will get back to you as soon as possible 😘"
+              );
+              setLoading(false);
+              setEndMessage(true);
+            },
+            function (error) {
+              console.log("FAILED...", error);
+              message.error(error);
+              setLoading(false);
+            }
+          );
+      }
     } catch (error) {
       console.log(error);
+      setLoading(false);
     }
   };
 
   return (
     <div id="contactPage">
       <div className={styles.container} id="container">
+        {contextHolder}
         <div
           className="left"
           data-aos="fade-up"
@@ -80,7 +110,7 @@ const ContactPage = () => {
               <div className="icon">
                 <FontAwesomeIcon icon={faCheck} />
               </div>
-              <div className="text">5+ Years Of Experience</div>
+              <div className="text">3+ Years Of Experience</div>
             </div>
             <div className="check">
               <div className="icon">
@@ -167,8 +197,20 @@ const ContactPage = () => {
               onClick={(e) => {
                 handleSendMessage(e);
               }}
+              type="submit"
+              disabled={endMessage || loading}
             >
-              Send Us Message <FontAwesomeIcon icon={faChevronRight} />
+              {loading ? (
+                <>
+                  Sending..... <FontAwesomeIcon icon={faPaperPlane} />
+                </>
+              ) : endMessage ? (
+                "Thank You 😘"
+              ) : (
+                <>
+                  Send Us Message <FontAwesomeIcon icon={faChevronRight} />
+                </>
+              )}
             </button>
           </form>
         </div>

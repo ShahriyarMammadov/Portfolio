@@ -55,39 +55,9 @@ export default function Home() {
     };
   }, []);
 
-  const [experience, setExperience] = useState(0);
-  const [project, setProject] = useState(0);
-  const [client, setClient] = useState(0);
-
-  useEffect(() => {
-    const increaseExperience = () => {
-      if (experience < 2) {
-        setExperience(experience + 1);
-      }
-    };
-
-    const increaseProject = () => {
-      if (project < 10) {
-        setProject(project + 1);
-      }
-    };
-
-    const increaseClient = () => {
-      if (client < 100) {
-        setClient(client + 1);
-      }
-    };
-
-    const experienceTimer = setInterval(increaseExperience, 100);
-    const projectTimer = setInterval(increaseProject, 100);
-    const clientTimer = setInterval(increaseClient, 100);
-
-    return () => {
-      clearInterval(experienceTimer);
-      clearInterval(projectTimer);
-      clearInterval(clientTimer);
-    };
-  }, [experience, project, client]);
+  const [experience, setExperience] = useState(3);
+  const [project, setProject] = useState(10);
+  const [client, setClient] = useState(100);
 
   return (
     <>
@@ -98,7 +68,16 @@ export default function Home() {
               <h2>Hello, i'm</h2>
               <h1>Shahriyar Mammadov</h1>
               <TextTypist
-                textArray={[500, "web developer", 1000, "web designer"]}
+                textArray={[
+                  500,
+                  "web developer",
+                  1000,
+                  "web designer",
+                  1500,
+                  "mobile developer",
+                  2000,
+                  "QA tester",
+                ]}
               />
               <p>
                 We denounce with righteous indignation dislike demoralized by
@@ -108,7 +87,12 @@ export default function Home() {
                 <button>
                   Hire Me <FontAwesomeIcon icon={faAngleRight} />
                 </button>
-                <a href="../../public/cv.pdf" download>
+                <a
+                  href={
+                    "https://drive.google.com/file/d/1RhEKPB1VJP3yCRXIwGr7eo8RoIGX9N5k/view?usp=sharing"
+                  }
+                  target="_blank"
+                >
                   Download Resume
                   <FontAwesomeIcon icon={faAngleRight} />
                 </a>

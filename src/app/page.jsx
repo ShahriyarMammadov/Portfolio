@@ -235,9 +235,9 @@ export default function Home() {
                         <FontAwesomeIcon icon={faLocationArrow} />
                       </div>
                       <div className={styles.name}>
-                        <p>2023/07 - Present</p>
-                        <h3>Full Stack Web Developer</h3>
-                        <p>Allvan Agency</p>
+                        <p>2023/12 - Present</p>
+                        <h3>Quality Assurance Automation Engineer & Manual Tester (CVM)</h3>
+                        <p>Kapital Bank</p>
                       </div>
                     </div>
                     <div className={styles.card} data-aos="fade-up-left">
@@ -253,14 +253,14 @@ export default function Home() {
                   </div>
                   <hr />
                   <div>
-                    <div className={styles.card} data-aos="fade-up-right">
+                   <div className={styles.card} data-aos="fade-up-right">
                       <div className={styles.icon}>
                         <FontAwesomeIcon icon={faLocationArrow} />
                       </div>
                       <div className={styles.name}>
-                        <p>2023/02 - 2023/07</p>
+                        <p>2023/07 - 2023/11</p>
                         <h3>Full Stack Web Developer</h3>
-                        <p>Several Startups</p>
+                        <p>Allvan Agency</p>
                       </div>
                     </div>
                     <div className={styles.card} data-aos="fade-up-left">

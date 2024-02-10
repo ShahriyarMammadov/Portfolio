@@ -169,7 +169,7 @@ export default function Home() {
                     <div>
                       <p>Email Us</p>
                       <a href="mailto:shahriyarmammadov@gmail.com">
-                        shahriyarmammadov@gmail.com
+                        shahriyarmammadov16@gmail.com
                       </a>
                     </div>
                   </div>

@@ -72,7 +72,7 @@ export default function Home() {
                   500,
                   "web developer",
                   1000,
-                  "web designer",
+                  "software developer",
                   1500,
                   "mobile developer",
                   2000,

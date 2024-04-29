@@ -20,7 +20,7 @@ const LatestBlogAndNews = () => {
               <div className="image">
                 <Image
                   src={
-                    "https://firebasestorage.googleapis.com/v0/b/qaychi-az.appspot.com/o/qaychiimages%2Fjavascript.png?alt=media&token=0d0b0977-d45a-47d6-b1d1-e37d1f6708c0"
+                    "https://firebasestorage.googleapis.com/v0/b/qaychi-az.appspot.com/o/qaychiimages%2Ffrontend_developer_react%20certificate-1.png?alt=media&token=834ddc4c-9162-4b3e-82d6-0e24d79263fa"
                   }
                   alt="front end"
                 />
@@ -30,7 +30,7 @@ const LatestBlogAndNews = () => {
               <div className="image">
                 <Image
                   src={
-                    "https://firebasestorage.googleapis.com/v0/b/qaychi-az.appspot.com/o/qaychiimages%2Fproblemsolving.png?alt=media&token=7f76bcd5-b360-4e15-a53b-f56aa534c5bd"
+                    "https://firebasestorage.googleapis.com/v0/b/qaychi-az.appspot.com/o/qaychiimages%2Fsoftware_engineer%20certificate-1.png?alt=media&token=2864e30b-5a32-409e-a7da-f825a9e9bfa8"
                   }
                   alt="software engineer"
                 />

@@ -49,6 +49,10 @@ export default function RootLayout({ children }) {
         ></script>
 
         <meta
+          name="google-site-verification"
+          content="ca-pub-2651137106510803"
+        ></meta>
+        <meta
           name="google-adsense-account"
           content="ca-pub-2651137106510803"
         ></meta>
